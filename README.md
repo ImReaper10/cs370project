@@ -51,7 +51,24 @@ ollama run mistral
 python app.py
 ```
 
-### Example Query
-Using only the videos, explain the advantages of CNNs over fully connected networks.
-Using only the videos, explain the the binary cross entropy loss function.
+## Demo Videos
+
+Below are example queries run on the video RAG system with embedded video transcripts:
+
+- **Binary Classification Question**
+  [![Binary Classification](https://img.youtube.com/vi/XcWSUFef5D8/0.jpg)](https://youtu.be/XcWSUFef5D8)
+  > Querying "What is binary classification?" and answering from transcript chunks.
+
+- **CNNs (Convolutional Neural Networks) Question**
+  [![CNNs](https://img.youtube.com/vi/imd_5FKqAsU/0.jpg)](https://youtu.be/imd_5FKqAsU)
+  > Demonstrates contextual answer retrieval for a CNN-related question.
+
+- **ResNets Explanation**
+  [![ResNets](https://img.youtube.com/vi/wSeNgWnlaSI/0.jpg)](https://youtu.be/wSeNgWnlaSI)
+  > Tests the model's ability to recall ResNet concepts from lecture transcripts.
+
+- **Out-of-Scope Question**
+  [![Out-of-scope](https://img.youtube.com/vi/x9TNC9w-3fE/0.jpg)](https://youtu.be/x9TNC9w-3fE)
+  > Asks an unrelated question to verify if the system properly declines or misfires.
+
 
