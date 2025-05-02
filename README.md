@@ -2,6 +2,8 @@
 
 This project is a Retrieval-Augmented Generation (RAG) pipeline that allows users to query transcribed video lectures using a local language model (via Ollama) and vector similarity search (via Qdrant). It demonstrates how to embed video subtitles, store them in a vector DB, and generate answers using Mistral.
 
+Made by Husain Awan and Gabriel Orbe
+
 ---
 
 ##  Features
