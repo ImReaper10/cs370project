@@ -35,13 +35,14 @@ AIProject/
 ```bash
 git clone https://github.com/ImReaper10/AIProject.git
 cd AIProject
+```
 
 ### Set Up Virtual Environment
 python -m venv .venv
 source .venv/Scripts/activate  # On Windows
 pip install -r requirements.txt
 
-Install & Run Qdrant Locally
+### Install & Run Qdrant Locally
 Download from Qdrant Releases, extract, and run:
 ./qdrant.exe
 
@@ -54,7 +55,7 @@ Step 3: Start the app (with Ollama running)
 ollama run mistral
 python app.py
 
-Example Query
+### Example Query
 Using only the videos, explain the advantages of CNNs over fully connected networks.
 Using only the videos, explain the the binary cross entropy loss function.
 
