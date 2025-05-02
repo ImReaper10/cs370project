@@ -1,1 +1,60 @@
-# AIProject
+# Video Transcript RAG — Local Ollama + Qdrant
+
+This project is a Retrieval-Augmented Generation (RAG) pipeline that allows users to query transcribed video lectures using a local language model (via Ollama) and vector similarity search (via Qdrant). It demonstrates how to embed video subtitles, store them in a vector DB, and generate answers using Mistral or any local LLM.
+
+---
+
+##  Features
+
+-  Question answering from video transcripts
+-  Subtitle chunking + sentence splitting using spaCy
+-  Semantic search with Qdrant
+-  Local LLM inference with Ollama (`mistral`, `llama2`, etc.)
+-  Topic modeling using BERTopic
+-  Interactive frontend via Gradio
+
+---
+
+## Folder Structure
+AIProject/
+├── app.py # Gradio app to ask questions
+├── prepare_vectors.py # Embeds subtitles and sends to Qdrant
+├── sentence_processing.py # spaCy-based subtitle segmentation
+├── bertopic_topics.py # Topic modeling with BERTopic
+├── topic_modeling.py # Callable topic modeling function
+├── ProjectCaptions/ # Raw video caption .json files
+├── data/
+│ ├── final_sentences.json # Cleaned and merged subtitle chunks
+│ └── topic_sentences.json # Labeled topic metadata
+└── requirements.txt # All dependencies
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ImReaper10/AIProject.git
+cd AIProject
+
+### Set Up Virtual Environment
+python -m venv .venv
+source .venv/Scripts/activate  # On Windows
+pip install -r requirements.txt
+
+Install & Run Qdrant Locally
+Download from Qdrant Releases, extract, and run:
+./qdrant.exe
+
+### How to Run the Project
+Step 1: Preprocess the subtitles
+python sentence_processing.py
+Step 2: Upload vectors to Qdrant
+python prepare_vectors.py
+Step 3: Start the app (with Ollama running)
+ollama run mistral
+python app.py
+
+Example Query
+Using only the videos, explain the advantages of CNNs over fully connected networks.
+Using only the videos, explain the the binary cross entropy loss function.
+
