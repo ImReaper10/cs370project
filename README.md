@@ -1,6 +1,6 @@
 # Video Transcript RAG — Local Ollama + Qdrant
 
-This project is a Retrieval-Augmented Generation (RAG) pipeline that allows users to query transcribed video lectures using a local language model (via Ollama) and vector similarity search (via Qdrant). It demonstrates how to embed video subtitles, store them in a vector DB, and generate answers using Mistral or any local LLM.
+This project is a Retrieval-Augmented Generation (RAG) pipeline that allows users to query transcribed video lectures using a local language model (via Ollama) and vector similarity search (via Qdrant). It demonstrates how to embed video subtitles, store them in a vector DB, and generate answers using Mistral.
 
 ---
 
@@ -8,9 +8,9 @@ This project is a Retrieval-Augmented Generation (RAG) pipeline that allows user
 
 -  Question answering from video transcripts
 -  Subtitle chunking + sentence splitting using spaCy
--  Semantic search with Qdrant
--  Local LLM inference with Ollama (`mistral`, `llama2`, etc.)
 -  Topic modeling using BERTopic
+-  Local LLM inference with Ollama (`mistral`)
+-  Semantic search with Qdrant
 -  Interactive frontend via Gradio
 
 ---
