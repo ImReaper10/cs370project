@@ -56,7 +56,7 @@ python app.py
 Below are example queries run on the video RAG system with embedded video transcripts:
 
 - **Binary Classification Question**
-  [![](https://img.youtube.com/vi/XcWSUFef5D8/0.jpg)](https://youtu.be/XcWSUFef5D8)
+  (https://img.youtube.com/vi/XcWSUFef5D8/0.jpg)](https://youtu.be/XcWSUFef5D8)
   > Querying "What is binary classification?" and answering from transcript chunks.
 
 - **CNNs (Convolutional Neural Networks) Question**
