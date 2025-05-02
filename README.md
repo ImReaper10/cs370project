@@ -16,17 +16,19 @@ This project is a Retrieval-Augmented Generation (RAG) pipeline that allows user
 ---
 
 ## Folder Structure
+```text
 AIProject/
-├── app.py # Gradio app to ask questions
-├── prepare_vectors.py # Embeds subtitles and sends to Qdrant
+├── app.py                 # Gradio app to ask questions
+├── prepare_vectors.py     # Embeds subtitles and sends to Qdrant
 ├── sentence_processing.py # spaCy-based subtitle segmentation
-├── bertopic_topics.py # Topic modeling with BERTopic
-├── topic_modeling.py # Callable topic modeling function
-├── ProjectCaptions/ # Raw video caption .json files
+├── bertopic_topics.py     # Topic modeling with BERTopic
+├── topic_modeling.py      # Callable topic modeling function
+├── ProjectCaptions/       # Raw video caption .json files
 ├── data/
-│ ├── final_sentences.json # Cleaned and merged subtitle chunks
-│ └── topic_sentences.json # Labeled topic metadata
-└── requirements.txt # All dependencies
+│   ├── final_sentences.json  # Cleaned and merged subtitle chunks
+│   └── topic_sentences.json  # Labeled topic metadata
+└── requirements.txt       # All dependencies
+
 
 ## Setup Instructions
 
