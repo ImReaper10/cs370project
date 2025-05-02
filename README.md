@@ -48,12 +48,21 @@ Download from Qdrant Releases, extract, and run:
 
 ### How to Run the Project
 Step 1: Preprocess the subtitles
+```python
 python sentence_processing.py
+```
 Step 2: Upload vectors to Qdrant
+```python
 python prepare_vectors.py
+```
+
 Step 3: Start the app (with Ollama running)
+```bash
 ollama run mistral
+```
+```python
 python app.py
+```
 
 ### Example Query
 Using only the videos, explain the advantages of CNNs over fully connected networks.
