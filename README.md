@@ -56,7 +56,7 @@ python app.py
 Below are example queries run on the video RAG system with embedded video transcripts:
 
 - **Binary Classification Question**
-  (https://img.youtube.com/vi/XcWSUFef5D8/0.jpg)](https://youtu.be/XcWSUFef5D8)
+  [![Binary Classification](https://img.youtube.com/vi/XcWSUFef5D8/0.jpg)](https://youtu.be/XcWSUFef5D8)
   > Querying "What is binary classification?" and answering from transcript chunks.
 
 - **CNNs (Convolutional Neural Networks) Question**
@@ -69,6 +69,6 @@ Below are example queries run on the video RAG system with embedded video transc
 
 - **Out-of-Scope Question**
   [![Out-of-scope](https://img.youtube.com/vi/x9TNC9w-3fE/0.jpg)](https://youtu.be/x9TNC9w-3fE)
-  > Asks an unrelated question to verify if the system properly declines or misfires.
+  > Asks an unrelated question to verify if the system properly declines.
 
 
