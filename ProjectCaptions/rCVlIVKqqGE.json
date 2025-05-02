@@ -1,0 +1,2966 @@
+{
+  "video_id": "rCVlIVKqqGE",
+  "title": "4 image classification",
+  "captions": [
+    {
+      "start": "00:00:03.950",
+      "end": "00:00:03.960",
+      "text": "in this Example The Notebook uh is quite"
+    },
+    {
+      "start": "00:00:03.960",
+      "end": "00:00:07.550",
+      "text": "in this Example The Notebook uh is quite uh instructive because it refers to a"
+    },
+    {
+      "start": "00:00:07.550",
+      "end": "00:00:07.560",
+      "text": "uh instructive because it refers to a"
+    },
+    {
+      "start": "00:00:07.560",
+      "end": "00:00:10.709",
+      "text": "uh instructive because it refers to a small data set um and I think uh working"
+    },
+    {
+      "start": "00:00:10.709",
+      "end": "00:00:10.719",
+      "text": "small data set um and I think uh working"
+    },
+    {
+      "start": "00:00:10.719",
+      "end": "00:00:12.870",
+      "text": "small data set um and I think uh working with small data sets are actually handy"
+    },
+    {
+      "start": "00:00:12.870",
+      "end": "00:00:12.880",
+      "text": "with small data sets are actually handy"
+    },
+    {
+      "start": "00:00:12.880",
+      "end": "00:00:15.190",
+      "text": "with small data sets are actually handy in the beginning when you are trying to"
+    },
+    {
+      "start": "00:00:15.190",
+      "end": "00:00:15.200",
+      "text": "in the beginning when you are trying to"
+    },
+    {
+      "start": "00:00:15.200",
+      "end": "00:00:17.710",
+      "text": "in the beginning when you are trying to understand what is going on here we have"
+    },
+    {
+      "start": "00:00:17.710",
+      "end": "00:00:17.720",
+      "text": "understand what is going on here we have"
+    },
+    {
+      "start": "00:00:17.720",
+      "end": "00:00:21.310",
+      "text": "understand what is going on here we have the classic case of dogs versus cats we"
+    },
+    {
+      "start": "00:00:21.310",
+      "end": "00:00:21.320",
+      "text": "the classic case of dogs versus cats we"
+    },
+    {
+      "start": "00:00:21.320",
+      "end": "00:00:24.029",
+      "text": "the classic case of dogs versus cats we have also the simplest possible task in"
+    },
+    {
+      "start": "00:00:24.029",
+      "end": "00:00:24.039",
+      "text": "have also the simplest possible task in"
+    },
+    {
+      "start": "00:00:24.039",
+      "end": "00:00:26.390",
+      "text": "have also the simplest possible task in machine learning which is classification"
+    },
+    {
+      "start": "00:00:26.390",
+      "end": "00:00:26.400",
+      "text": "machine learning which is classification"
+    },
+    {
+      "start": "00:00:26.400",
+      "end": "00:00:29.269",
+      "text": "machine learning which is classification image classification in this case and we"
+    },
+    {
+      "start": "00:00:29.269",
+      "end": "00:00:29.279",
+      "text": "image classification in this case and we"
+    },
+    {
+      "start": "00:00:29.279",
+      "end": "00:00:30.870",
+      "text": "image classification in this case and we are going to be using convolutional"
+    },
+    {
+      "start": "00:00:30.870",
+      "end": "00:00:30.880",
+      "text": "are going to be using convolutional"
+    },
+    {
+      "start": "00:00:30.880",
+      "end": "00:00:34.110",
+      "text": "are going to be using convolutional layers in order to detect no no sorry to"
+    },
+    {
+      "start": "00:00:34.110",
+      "end": "00:00:34.120",
+      "text": "layers in order to detect no no sorry to"
+    },
+    {
+      "start": "00:00:34.120",
+      "end": "00:00:35.389",
+      "text": "layers in order to detect no no sorry to detect to"
+    },
+    {
+      "start": "00:00:35.389",
+      "end": "00:00:35.399",
+      "text": "detect to"
+    },
+    {
+      "start": "00:00:35.399",
+      "end": "00:00:39.430",
+      "text": "detect to classify uh the um presence of a dog or"
+    },
+    {
+      "start": "00:00:39.430",
+      "end": "00:00:39.440",
+      "text": "classify uh the um presence of a dog or"
+    },
+    {
+      "start": "00:00:39.440",
+      "end": "00:00:42.910",
+      "text": "classify uh the um presence of a dog or a cat on in in an image okay or cats in"
+    },
+    {
+      "start": "00:00:42.910",
+      "end": "00:00:42.920",
+      "text": "a cat on in in an image okay or cats in"
+    },
+    {
+      "start": "00:00:42.920",
+      "end": "00:00:46.869",
+      "text": "a cat on in in an image okay or cats in this case all right so um the uh uh data"
+    },
+    {
+      "start": "00:00:46.869",
+      "end": "00:00:46.879",
+      "text": "this case all right so um the uh uh data"
+    },
+    {
+      "start": "00:00:46.879",
+      "end": "00:00:49.189",
+      "text": "this case all right so um the uh uh data set is available in kagle the original"
+    },
+    {
+      "start": "00:00:49.189",
+      "end": "00:00:49.199",
+      "text": "set is available in kagle the original"
+    },
+    {
+      "start": "00:00:49.199",
+      "end": "00:00:52.310",
+      "text": "set is available in kagle the original data set contained 25,000 images but we"
+    },
+    {
+      "start": "00:00:52.310",
+      "end": "00:00:52.320",
+      "text": "data set contained 25,000 images but we"
+    },
+    {
+      "start": "00:00:52.320",
+      "end": "00:00:56.670",
+      "text": "data set contained 25,000 images but we have cut down uh to 1,000 images uh per"
+    },
+    {
+      "start": "00:00:56.670",
+      "end": "00:00:56.680",
+      "text": "have cut down uh to 1,000 images uh per"
+    },
+    {
+      "start": "00:00:56.680",
+      "end": "00:01:00.389",
+      "text": "have cut down uh to 1,000 images uh per class and uh we have a split the data"
+    },
+    {
+      "start": "00:01:00.389",
+      "end": "00:01:00.399",
+      "text": "class and uh we have a split the data"
+    },
+    {
+      "start": "00:01:00.399",
+      "end": "00:01:03.750",
+      "text": "class and uh we have a split the data set into uh train and validation and"
+    },
+    {
+      "start": "00:01:03.750",
+      "end": "00:01:03.760",
+      "text": "set into uh train and validation and"
+    },
+    {
+      "start": "00:01:03.760",
+      "end": "00:01:07.429",
+      "text": "set into uh train and validation and test data set okay all right so we are"
+    },
+    {
+      "start": "00:01:07.429",
+      "end": "00:01:07.439",
+      "text": "test data set okay all right so we are"
+    },
+    {
+      "start": "00:01:07.439",
+      "end": "00:01:09.990",
+      "text": "test data set okay all right so we are going to uh obviously use train and"
+    },
+    {
+      "start": "00:01:09.990",
+      "end": "00:01:10.000",
+      "text": "going to uh obviously use train and"
+    },
+    {
+      "start": "00:01:10.000",
+      "end": "00:01:11.990",
+      "text": "going to uh obviously use train and validation to create if you like our"
+    },
+    {
+      "start": "00:01:11.990",
+      "end": "00:01:12.000",
+      "text": "validation to create if you like our"
+    },
+    {
+      "start": "00:01:12.000",
+      "end": "00:01:14.350",
+      "text": "validation to create if you like our model and of course we are going to"
+    },
+    {
+      "start": "00:01:14.350",
+      "end": "00:01:14.360",
+      "text": "model and of course we are going to"
+    },
+    {
+      "start": "00:01:14.360",
+      "end": "00:01:18.070",
+      "text": "model and of course we are going to exercise some kind of prediction API uh"
+    },
+    {
+      "start": "00:01:18.070",
+      "end": "00:01:18.080",
+      "text": "exercise some kind of prediction API uh"
+    },
+    {
+      "start": "00:01:18.080",
+      "end": "00:01:20.510",
+      "text": "exercise some kind of prediction API uh using our test data set after a model is"
+    },
+    {
+      "start": "00:01:20.510",
+      "end": "00:01:20.520",
+      "text": "using our test data set after a model is"
+    },
+    {
+      "start": "00:01:20.520",
+      "end": "00:01:22.749",
+      "text": "using our test data set after a model is created so the architecture we're going"
+    },
+    {
+      "start": "00:01:22.749",
+      "end": "00:01:22.759",
+      "text": "created so the architecture we're going"
+    },
+    {
+      "start": "00:01:22.759",
+      "end": "00:01:25.670",
+      "text": "created so the architecture we're going to be using here is an architecture that"
+    },
+    {
+      "start": "00:01:25.670",
+      "end": "00:01:25.680",
+      "text": "to be using here is an architecture that"
+    },
+    {
+      "start": "00:01:25.680",
+      "end": "00:01:27.910",
+      "text": "to be using here is an architecture that we have kind of developed specifically"
+    },
+    {
+      "start": "00:01:27.910",
+      "end": "00:01:27.920",
+      "text": "we have kind of developed specifically"
+    },
+    {
+      "start": "00:01:27.920",
+      "end": "00:01:30.030",
+      "text": "we have kind of developed specifically for this example"
+    },
+    {
+      "start": "00:01:30.030",
+      "end": "00:01:30.040",
+      "text": "for this example"
+    },
+    {
+      "start": "00:01:30.040",
+      "end": "00:01:33.910",
+      "text": "for this example is uh consist evidently of convolutional"
+    },
+    {
+      "start": "00:01:33.910",
+      "end": "00:01:33.920",
+      "text": "is uh consist evidently of convolutional"
+    },
+    {
+      "start": "00:01:33.920",
+      "end": "00:01:36.069",
+      "text": "is uh consist evidently of convolutional and and interleaf with Max pulling"
+    },
+    {
+      "start": "00:01:36.069",
+      "end": "00:01:36.079",
+      "text": "and and interleaf with Max pulling"
+    },
+    {
+      "start": "00:01:36.079",
+      "end": "00:01:39.149",
+      "text": "and and interleaf with Max pulling layers and uh probably you recognize uh"
+    },
+    {
+      "start": "00:01:39.149",
+      "end": "00:01:39.159",
+      "text": "layers and uh probably you recognize uh"
+    },
+    {
+      "start": "00:01:39.159",
+      "end": "00:01:42.230",
+      "text": "layers and uh probably you recognize uh the API here in this case is a kind of a"
+    },
+    {
+      "start": "00:01:42.230",
+      "end": "00:01:42.240",
+      "text": "the API here in this case is a kind of a"
+    },
+    {
+      "start": "00:01:42.240",
+      "end": "00:01:45.630",
+      "text": "the API here in this case is a kind of a caras API uh similar architectures can"
+    },
+    {
+      "start": "00:01:45.630",
+      "end": "00:01:45.640",
+      "text": "caras API uh similar architectures can"
+    },
+    {
+      "start": "00:01:45.640",
+      "end": "00:01:49.429",
+      "text": "caras API uh similar architectures can be develop for py the um first layer"
+    },
+    {
+      "start": "00:01:49.429",
+      "end": "00:01:49.439",
+      "text": "be develop for py the um first layer"
+    },
+    {
+      "start": "00:01:49.439",
+      "end": "00:01:52.149",
+      "text": "be develop for py the um first layer over here is a convolutional layer uh"
+    },
+    {
+      "start": "00:01:52.149",
+      "end": "00:01:52.159",
+      "text": "over here is a convolutional layer uh"
+    },
+    {
+      "start": "00:01:52.159",
+      "end": "00:01:57.109",
+      "text": "over here is a convolutional layer uh the um uh there is um uh input images of"
+    },
+    {
+      "start": "00:01:57.109",
+      "end": "00:01:57.119",
+      "text": "the um uh there is um uh input images of"
+    },
+    {
+      "start": "00:01:57.119",
+      "end": "00:02:00.029",
+      "text": "the um uh there is um uh input images of 150 by 150 pixels this is what the imag"
+    },
+    {
+      "start": "00:02:00.029",
+      "end": "00:02:00.039",
+      "text": "150 by 150 pixels this is what the imag"
+    },
+    {
+      "start": "00:02:00.039",
+      "end": "00:02:03.630",
+      "text": "150 by 150 pixels this is what the imag that we have uh transformed uh now are"
+    },
+    {
+      "start": "00:02:03.630",
+      "end": "00:02:03.640",
+      "text": "that we have uh transformed uh now are"
+    },
+    {
+      "start": "00:02:03.640",
+      "end": "00:02:05.749",
+      "text": "that we have uh transformed uh now are and each image is a naturally colored"
+    },
+    {
+      "start": "00:02:05.749",
+      "end": "00:02:05.759",
+      "text": "and each image is a naturally colored"
+    },
+    {
+      "start": "00:02:05.759",
+      "end": "00:02:08.869",
+      "text": "and each image is a naturally colored image of three channels red green and"
+    },
+    {
+      "start": "00:02:08.869",
+      "end": "00:02:08.879",
+      "text": "image of three channels red green and"
+    },
+    {
+      "start": "00:02:08.879",
+      "end": "00:02:14.190",
+      "text": "image of three channels red green and blue we have U 3x3 kernels and uh we"
+    },
+    {
+      "start": "00:02:14.190",
+      "end": "00:02:14.200",
+      "text": "blue we have U 3x3 kernels and uh we"
+    },
+    {
+      "start": "00:02:14.200",
+      "end": "00:02:16.630",
+      "text": "blue we have U 3x3 kernels and uh we have the 32 here indicates the number of"
+    },
+    {
+      "start": "00:02:16.630",
+      "end": "00:02:16.640",
+      "text": "have the 32 here indicates the number of"
+    },
+    {
+      "start": "00:02:16.640",
+      "end": "00:02:19.830",
+      "text": "have the 32 here indicates the number of filters okay or convolutional neurons"
+    },
+    {
+      "start": "00:02:19.830",
+      "end": "00:02:19.840",
+      "text": "filters okay or convolutional neurons"
+    },
+    {
+      "start": "00:02:19.840",
+      "end": "00:02:22.150",
+      "text": "filters okay or convolutional neurons and we are going to be using a rectified"
+    },
+    {
+      "start": "00:02:22.150",
+      "end": "00:02:22.160",
+      "text": "and we are going to be using a rectified"
+    },
+    {
+      "start": "00:02:22.160",
+      "end": "00:02:24.750",
+      "text": "and we are going to be using a rectified linear unit they exactly the same"
+    },
+    {
+      "start": "00:02:24.750",
+      "end": "00:02:24.760",
+      "text": "linear unit they exactly the same"
+    },
+    {
+      "start": "00:02:24.760",
+      "end": "00:02:27.390",
+      "text": "linear unit they exactly the same nonlinearity that we have used uh in the"
+    },
+    {
+      "start": "00:02:27.390",
+      "end": "00:02:27.400",
+      "text": "nonlinearity that we have used uh in the"
+    },
+    {
+      "start": "00:02:27.400",
+      "end": "00:02:28.670",
+      "text": "nonlinearity that we have used uh in the fully connected"
+    },
+    {
+      "start": "00:02:28.670",
+      "end": "00:02:28.680",
+      "text": "fully connected"
+    },
+    {
+      "start": "00:02:28.680",
+      "end": "00:02:32.309",
+      "text": "fully connected layers uh then we are passing the output"
+    },
+    {
+      "start": "00:02:32.309",
+      "end": "00:02:32.319",
+      "text": "layers uh then we are passing the output"
+    },
+    {
+      "start": "00:02:32.319",
+      "end": "00:02:34.990",
+      "text": "layers uh then we are passing the output feature map produced here and by the way"
+    },
+    {
+      "start": "00:02:34.990",
+      "end": "00:02:35.000",
+      "text": "feature map produced here and by the way"
+    },
+    {
+      "start": "00:02:35.000",
+      "end": "00:02:37.430",
+      "text": "feature map produced here and by the way this is where you can actually see the"
+    },
+    {
+      "start": "00:02:37.430",
+      "end": "00:02:37.440",
+      "text": "this is where you can actually see the"
+    },
+    {
+      "start": "00:02:37.440",
+      "end": "00:02:40.430",
+      "text": "this is where you can actually see the um uh the usage of that kind of formula"
+    },
+    {
+      "start": "00:02:40.430",
+      "end": "00:02:40.440",
+      "text": "um uh the usage of that kind of formula"
+    },
+    {
+      "start": "00:02:40.440",
+      "end": "00:02:41.949",
+      "text": "um uh the usage of that kind of formula which I was pointing out regarding the"
+    },
+    {
+      "start": "00:02:41.949",
+      "end": "00:02:41.959",
+      "text": "which I was pointing out regarding the"
+    },
+    {
+      "start": "00:02:41.959",
+      "end": "00:02:44.110",
+      "text": "which I was pointing out regarding the output feature map dimensions in an"
+    },
+    {
+      "start": "00:02:44.110",
+      "end": "00:02:44.120",
+      "text": "output feature map dimensions in an"
+    },
+    {
+      "start": "00:02:44.120",
+      "end": "00:02:47.350",
+      "text": "output feature map dimensions in an earlier video uh the uh Max pooling"
+    },
+    {
+      "start": "00:02:47.350",
+      "end": "00:02:47.360",
+      "text": "earlier video uh the uh Max pooling"
+    },
+    {
+      "start": "00:02:47.360",
+      "end": "00:02:50.470",
+      "text": "earlier video uh the uh Max pooling layer in this case is 2x two and it will"
+    },
+    {
+      "start": "00:02:50.470",
+      "end": "00:02:50.480",
+      "text": "layer in this case is 2x two and it will"
+    },
+    {
+      "start": "00:02:50.480",
+      "end": "00:02:53.949",
+      "text": "layer in this case is 2x two and it will further uh shrink uh the output feat M"
+    },
+    {
+      "start": "00:02:53.949",
+      "end": "00:02:53.959",
+      "text": "further uh shrink uh the output feat M"
+    },
+    {
+      "start": "00:02:53.959",
+      "end": "00:02:56.670",
+      "text": "further uh shrink uh the output feat M produced by the first layer selecting"
+    },
+    {
+      "start": "00:02:56.670",
+      "end": "00:02:56.680",
+      "text": "produced by the first layer selecting"
+    },
+    {
+      "start": "00:02:56.680",
+      "end": "00:02:58.990",
+      "text": "produced by the first layer selecting the most important features out of it"
+    },
+    {
+      "start": "00:02:58.990",
+      "end": "00:02:59.000",
+      "text": "the most important features out of it"
+    },
+    {
+      "start": "00:02:59.000",
+      "end": "00:03:00.869",
+      "text": "the most important features out of it passing it over to to a convolutional"
+    },
+    {
+      "start": "00:03:00.869",
+      "end": "00:03:00.879",
+      "text": "passing it over to to a convolutional"
+    },
+    {
+      "start": "00:03:00.879",
+      "end": "00:03:04.390",
+      "text": "passing it over to to a convolutional layer uh with uh 64 filters here you see"
+    },
+    {
+      "start": "00:03:04.390",
+      "end": "00:03:04.400",
+      "text": "layer uh with uh 64 filters here you see"
+    },
+    {
+      "start": "00:03:04.400",
+      "end": "00:03:06.430",
+      "text": "layer uh with uh 64 filters here you see now the pattern of increasing the number"
+    },
+    {
+      "start": "00:03:06.430",
+      "end": "00:03:06.440",
+      "text": "now the pattern of increasing the number"
+    },
+    {
+      "start": "00:03:06.440",
+      "end": "00:03:08.309",
+      "text": "now the pattern of increasing the number of filters as the network becomes deeper"
+    },
+    {
+      "start": "00:03:08.309",
+      "end": "00:03:08.319",
+      "text": "of filters as the network becomes deeper"
+    },
+    {
+      "start": "00:03:08.319",
+      "end": "00:03:11.830",
+      "text": "of filters as the network becomes deeper and deeper and uh at some point after"
+    },
+    {
+      "start": "00:03:11.830",
+      "end": "00:03:11.840",
+      "text": "and deeper and uh at some point after"
+    },
+    {
+      "start": "00:03:11.840",
+      "end": "00:03:15.390",
+      "text": "and deeper and uh at some point after one two three four layers four"
+    },
+    {
+      "start": "00:03:15.390",
+      "end": "00:03:15.400",
+      "text": "one two three four layers four"
+    },
+    {
+      "start": "00:03:15.400",
+      "end": "00:03:19.350",
+      "text": "one two three four layers four convolutional layers we are going to uh"
+    },
+    {
+      "start": "00:03:19.350",
+      "end": "00:03:19.360",
+      "text": "convolutional layers we are going to uh"
+    },
+    {
+      "start": "00:03:19.360",
+      "end": "00:03:21.990",
+      "text": "convolutional layers we are going to uh have the head and uh I think it's"
+    },
+    {
+      "start": "00:03:21.990",
+      "end": "00:03:22.000",
+      "text": "have the head and uh I think it's"
+    },
+    {
+      "start": "00:03:22.000",
+      "end": "00:03:25.229",
+      "text": "have the head and uh I think it's worthwhile going back into this uh vgg"
+    },
+    {
+      "start": "00:03:25.229",
+      "end": "00:03:25.239",
+      "text": "worthwhile going back into this uh vgg"
+    },
+    {
+      "start": "00:03:25.239",
+      "end": "00:03:27.990",
+      "text": "worthwhile going back into this uh vgg kind of architecture and look exactly"
+    },
+    {
+      "start": "00:03:27.990",
+      "end": "00:03:28.000",
+      "text": "kind of architecture and look exactly"
+    },
+    {
+      "start": "00:03:28.000",
+      "end": "00:03:30.670",
+      "text": "kind of architecture and look exactly where that head was in that architecture"
+    },
+    {
+      "start": "00:03:30.670",
+      "end": "00:03:30.680",
+      "text": "where that head was in that architecture"
+    },
+    {
+      "start": "00:03:30.680",
+      "end": "00:03:33.990",
+      "text": "where that head was in that architecture and and couple it with with this code um"
+    },
+    {
+      "start": "00:03:33.990",
+      "end": "00:03:34.000",
+      "text": "and and couple it with with this code um"
+    },
+    {
+      "start": "00:03:34.000",
+      "end": "00:03:36.589",
+      "text": "and and couple it with with this code um so here is the the point where the head"
+    },
+    {
+      "start": "00:03:36.589",
+      "end": "00:03:36.599",
+      "text": "so here is the the point where the head"
+    },
+    {
+      "start": "00:03:36.599",
+      "end": "00:03:38.949",
+      "text": "so here is the the point where the head starts and the head in this case is a"
+    },
+    {
+      "start": "00:03:38.949",
+      "end": "00:03:38.959",
+      "text": "starts and the head in this case is a"
+    },
+    {
+      "start": "00:03:38.959",
+      "end": "00:03:41.750",
+      "text": "starts and the head in this case is a concatenation of fully connected layers"
+    },
+    {
+      "start": "00:03:41.750",
+      "end": "00:03:41.760",
+      "text": "concatenation of fully connected layers"
+    },
+    {
+      "start": "00:03:41.760",
+      "end": "00:03:43.589",
+      "text": "concatenation of fully connected layers why we have this kind of concatenation"
+    },
+    {
+      "start": "00:03:43.589",
+      "end": "00:03:43.599",
+      "text": "why we have this kind of concatenation"
+    },
+    {
+      "start": "00:03:43.599",
+      "end": "00:03:47.949",
+      "text": "why we have this kind of concatenation and want do just a single layer um is uh"
+    },
+    {
+      "start": "00:03:47.949",
+      "end": "00:03:47.959",
+      "text": "and want do just a single layer um is uh"
+    },
+    {
+      "start": "00:03:47.959",
+      "end": "00:03:50.070",
+      "text": "and want do just a single layer um is uh you know gradually even within the head"
+    },
+    {
+      "start": "00:03:50.070",
+      "end": "00:03:50.080",
+      "text": "you know gradually even within the head"
+    },
+    {
+      "start": "00:03:50.080",
+      "end": "00:03:53.350",
+      "text": "you know gradually even within the head we need to gradually reach this point of"
+    },
+    {
+      "start": "00:03:53.350",
+      "end": "00:03:53.360",
+      "text": "we need to gradually reach this point of"
+    },
+    {
+      "start": "00:03:53.360",
+      "end": "00:03:55.789",
+      "text": "we need to gradually reach this point of uh desired number of classes we have a"
+    },
+    {
+      "start": "00:03:55.789",
+      "end": "00:03:55.799",
+      "text": "uh desired number of classes we have a"
+    },
+    {
+      "start": "00:03:55.799",
+      "end": "00:03:59.949",
+      "text": "uh desired number of classes we have a classification use case here um this is"
+    },
+    {
+      "start": "00:03:59.949",
+      "end": "00:03:59.959",
+      "text": "classification use case here um this is"
+    },
+    {
+      "start": "00:03:59.959",
+      "end": "00:04:02.069",
+      "text": "classification use case here um this is a thousand classes that are need to be"
+    },
+    {
+      "start": "00:04:02.069",
+      "end": "00:04:02.079",
+      "text": "a thousand classes that are need to be"
+    },
+    {
+      "start": "00:04:02.079",
+      "end": "00:04:05.030",
+      "text": "a thousand classes that are need to be present in at the top of the at the end"
+    },
+    {
+      "start": "00:04:05.030",
+      "end": "00:04:05.040",
+      "text": "present in at the top of the at the end"
+    },
+    {
+      "start": "00:04:05.040",
+      "end": "00:04:08.670",
+      "text": "present in at the top of the at the end of the of this U Network and this is"
+    },
+    {
+      "start": "00:04:08.670",
+      "end": "00:04:08.680",
+      "text": "of the of this U Network and this is"
+    },
+    {
+      "start": "00:04:08.680",
+      "end": "00:04:10.229",
+      "text": "of the of this U Network and this is basically the dimensionality of our"
+    },
+    {
+      "start": "00:04:10.229",
+      "end": "00:04:10.239",
+      "text": "basically the dimensionality of our"
+    },
+    {
+      "start": "00:04:10.239",
+      "end": "00:04:13.429",
+      "text": "basically the dimensionality of our posterior probability uh distribution uh"
+    },
+    {
+      "start": "00:04:13.429",
+      "end": "00:04:13.439",
+      "text": "posterior probability uh distribution uh"
+    },
+    {
+      "start": "00:04:13.439",
+      "end": "00:04:15.630",
+      "text": "posterior probability uh distribution uh we're going to have the a y hat if you"
+    },
+    {
+      "start": "00:04:15.630",
+      "end": "00:04:15.640",
+      "text": "we're going to have the a y hat if you"
+    },
+    {
+      "start": "00:04:15.640",
+      "end": "00:04:19.030",
+      "text": "we're going to have the a y hat if you like that consist of a thousand numbers"
+    },
+    {
+      "start": "00:04:19.030",
+      "end": "00:04:19.040",
+      "text": "like that consist of a thousand numbers"
+    },
+    {
+      "start": "00:04:19.040",
+      "end": "00:04:21.390",
+      "text": "like that consist of a thousand numbers uh a thousand are also the are the"
+    },
+    {
+      "start": "00:04:21.390",
+      "end": "00:04:21.400",
+      "text": "uh a thousand are also the are the"
+    },
+    {
+      "start": "00:04:21.400",
+      "end": "00:04:23.310",
+      "text": "uh a thousand are also the are the number of classes in the image net data"
+    },
+    {
+      "start": "00:04:23.310",
+      "end": "00:04:23.320",
+      "text": "number of classes in the image net data"
+    },
+    {
+      "start": "00:04:23.320",
+      "end": "00:04:26.790",
+      "text": "number of classes in the image net data set so this this Dimensions correspond"
+    },
+    {
+      "start": "00:04:26.790",
+      "end": "00:04:26.800",
+      "text": "set so this this Dimensions correspond"
+    },
+    {
+      "start": "00:04:26.800",
+      "end": "00:04:30.510",
+      "text": "set so this this Dimensions correspond to the image net uh classifier uh data"
+    },
+    {
+      "start": "00:04:30.510",
+      "end": "00:04:30.520",
+      "text": "to the image net uh classifier uh data"
+    },
+    {
+      "start": "00:04:30.520",
+      "end": "00:04:33.749",
+      "text": "to the image net uh classifier uh data set and so that's basically our head uh"
+    },
+    {
+      "start": "00:04:33.749",
+      "end": "00:04:33.759",
+      "text": "set and so that's basically our head uh"
+    },
+    {
+      "start": "00:04:33.759",
+      "end": "00:04:37.150",
+      "text": "set and so that's basically our head uh there is uh also seen over here in this"
+    },
+    {
+      "start": "00:04:37.150",
+      "end": "00:04:37.160",
+      "text": "there is uh also seen over here in this"
+    },
+    {
+      "start": "00:04:37.160",
+      "end": "00:04:40.670",
+      "text": "there is uh also seen over here in this code with uh this portion of the model"
+    },
+    {
+      "start": "00:04:40.670",
+      "end": "00:04:40.680",
+      "text": "code with uh this portion of the model"
+    },
+    {
+      "start": "00:04:40.680",
+      "end": "00:04:43.909",
+      "text": "code with uh this portion of the model so we have whatever we have produced in"
+    },
+    {
+      "start": "00:04:43.909",
+      "end": "00:04:43.919",
+      "text": "so we have whatever we have produced in"
+    },
+    {
+      "start": "00:04:43.919",
+      "end": "00:04:46.110",
+      "text": "so we have whatever we have produced in terms of convolutions over here and then"
+    },
+    {
+      "start": "00:04:46.110",
+      "end": "00:04:46.120",
+      "text": "terms of convolutions over here and then"
+    },
+    {
+      "start": "00:04:46.120",
+      "end": "00:04:49.749",
+      "text": "terms of convolutions over here and then we flatten the network so we flatten oh"
+    },
+    {
+      "start": "00:04:49.749",
+      "end": "00:04:49.759",
+      "text": "we flatten the network so we flatten oh"
+    },
+    {
+      "start": "00:04:49.759",
+      "end": "00:04:51.990",
+      "text": "we flatten the network so we flatten oh sorry flatten the output feature map"
+    },
+    {
+      "start": "00:04:51.990",
+      "end": "00:04:52.000",
+      "text": "sorry flatten the output feature map"
+    },
+    {
+      "start": "00:04:52.000",
+      "end": "00:04:54.230",
+      "text": "sorry flatten the output feature map there by flattening the output F map we"
+    },
+    {
+      "start": "00:04:54.230",
+      "end": "00:04:54.240",
+      "text": "there by flattening the output F map we"
+    },
+    {
+      "start": "00:04:54.240",
+      "end": "00:04:56.710",
+      "text": "there by flattening the output F map we are creating effectively uh a volume"
+    },
+    {
+      "start": "00:04:56.710",
+      "end": "00:04:56.720",
+      "text": "are creating effectively uh a volume"
+    },
+    {
+      "start": "00:04:56.720",
+      "end": "00:04:58.270",
+      "text": "are creating effectively uh a volume we're taking a volume at the input and"
+    },
+    {
+      "start": "00:04:58.270",
+      "end": "00:04:58.280",
+      "text": "we're taking a volume at the input and"
+    },
+    {
+      "start": "00:04:58.280",
+      "end": "00:05:00.350",
+      "text": "we're taking a volume at the input and we're flattening into a vector"
+    },
+    {
+      "start": "00:05:00.350",
+      "end": "00:05:00.360",
+      "text": "we're flattening into a vector"
+    },
+    {
+      "start": "00:05:00.360",
+      "end": "00:05:04.550",
+      "text": "we're flattening into a vector VOR and uh this Vector then is passed as"
+    },
+    {
+      "start": "00:05:04.550",
+      "end": "00:05:04.560",
+      "text": "VOR and uh this Vector then is passed as"
+    },
+    {
+      "start": "00:05:04.560",
+      "end": "00:05:05.950",
+      "text": "VOR and uh this Vector then is passed as input"
+    },
+    {
+      "start": "00:05:05.950",
+      "end": "00:05:05.960",
+      "text": "input"
+    },
+    {
+      "start": "00:05:05.960",
+      "end": "00:05:09.510",
+      "text": "input to two dense layers the first dense"
+    },
+    {
+      "start": "00:05:09.510",
+      "end": "00:05:09.520",
+      "text": "to two dense layers the first dense"
+    },
+    {
+      "start": "00:05:09.520",
+      "end": "00:05:14.110",
+      "text": "to two dense layers the first dense layer is has 512 neurons it takes"
+    },
+    {
+      "start": "00:05:14.110",
+      "end": "00:05:14.120",
+      "text": "layer is has 512 neurons it takes"
+    },
+    {
+      "start": "00:05:14.120",
+      "end": "00:05:16.270",
+      "text": "layer is has 512 neurons it takes whatever dimensionality uh and we'll see"
+    },
+    {
+      "start": "00:05:16.270",
+      "end": "00:05:16.280",
+      "text": "whatever dimensionality uh and we'll see"
+    },
+    {
+      "start": "00:05:16.280",
+      "end": "00:05:18.309",
+      "text": "whatever dimensionality uh and we'll see now the dimensions in a moment uh the"
+    },
+    {
+      "start": "00:05:18.309",
+      "end": "00:05:18.319",
+      "text": "now the dimensions in a moment uh the"
+    },
+    {
+      "start": "00:05:18.319",
+      "end": "00:05:21.590",
+      "text": "now the dimensions in a moment uh the flatten layer provided and reduces that"
+    },
+    {
+      "start": "00:05:21.590",
+      "end": "00:05:21.600",
+      "text": "flatten layer provided and reduces that"
+    },
+    {
+      "start": "00:05:21.600",
+      "end": "00:05:23.390",
+      "text": "flatten layer provided and reduces that just like any fully connected layer we"
+    },
+    {
+      "start": "00:05:23.390",
+      "end": "00:05:23.400",
+      "text": "just like any fully connected layer we"
+    },
+    {
+      "start": "00:05:23.400",
+      "end": "00:05:25.350",
+      "text": "just like any fully connected layer we have seen in a corresponding video in a"
+    },
+    {
+      "start": "00:05:25.350",
+      "end": "00:05:25.360",
+      "text": "have seen in a corresponding video in a"
+    },
+    {
+      "start": "00:05:25.360",
+      "end": "00:05:29.230",
+      "text": "have seen in a corresponding video in a different video uh earlier into 512"
+    },
+    {
+      "start": "00:05:29.230",
+      "end": "00:05:29.240",
+      "text": "different video uh earlier into 512"
+    },
+    {
+      "start": "00:05:29.240",
+      "end": "00:05:30.309",
+      "text": "different video uh earlier into 512 dimensions"
+    },
+    {
+      "start": "00:05:30.309",
+      "end": "00:05:30.319",
+      "text": "dimensions"
+    },
+    {
+      "start": "00:05:30.319",
+      "end": "00:05:32.670",
+      "text": "dimensions and we use the rectified linear unit for"
+    },
+    {
+      "start": "00:05:32.670",
+      "end": "00:05:32.680",
+      "text": "and we use the rectified linear unit for"
+    },
+    {
+      "start": "00:05:32.680",
+      "end": "00:05:35.830",
+      "text": "and we use the rectified linear unit for that and then with the subsequent layer"
+    },
+    {
+      "start": "00:05:35.830",
+      "end": "00:05:35.840",
+      "text": "that and then with the subsequent layer"
+    },
+    {
+      "start": "00:05:35.840",
+      "end": "00:05:39.110",
+      "text": "that and then with the subsequent layer takes 512 dimensions and reduces it"
+    },
+    {
+      "start": "00:05:39.110",
+      "end": "00:05:39.120",
+      "text": "takes 512 dimensions and reduces it"
+    },
+    {
+      "start": "00:05:39.120",
+      "end": "00:05:42.270",
+      "text": "takes 512 dimensions and reduces it further into gas into a single uh"
+    },
+    {
+      "start": "00:05:42.270",
+      "end": "00:05:42.280",
+      "text": "further into gas into a single uh"
+    },
+    {
+      "start": "00:05:42.280",
+      "end": "00:05:44.350",
+      "text": "further into gas into a single uh Dimension because as we have seen in the"
+    },
+    {
+      "start": "00:05:44.350",
+      "end": "00:05:44.360",
+      "text": "Dimension because as we have seen in the"
+    },
+    {
+      "start": "00:05:44.360",
+      "end": "00:05:46.110",
+      "text": "Dimension because as we have seen in the binary classification we have a binary"
+    },
+    {
+      "start": "00:05:46.110",
+      "end": "00:05:46.120",
+      "text": "binary classification we have a binary"
+    },
+    {
+      "start": "00:05:46.120",
+      "end": "00:05:48.270",
+      "text": "binary classification we have a binary classification use case here either"
+    },
+    {
+      "start": "00:05:48.270",
+      "end": "00:05:48.280",
+      "text": "classification use case here either"
+    },
+    {
+      "start": "00:05:48.280",
+      "end": "00:05:50.830",
+      "text": "classification use case here either we're going to have a cats or dogs we"
+    },
+    {
+      "start": "00:05:50.830",
+      "end": "00:05:50.840",
+      "text": "we're going to have a cats or dogs we"
+    },
+    {
+      "start": "00:05:50.840",
+      "end": "00:05:54.469",
+      "text": "we're going to have a cats or dogs we have um uh just a scaler that we need"
+    },
+    {
+      "start": "00:05:54.469",
+      "end": "00:05:54.479",
+      "text": "have um uh just a scaler that we need"
+    },
+    {
+      "start": "00:05:54.479",
+      "end": "00:05:57.710",
+      "text": "have um uh just a scaler that we need because that is the probability of the"
+    },
+    {
+      "start": "00:05:57.710",
+      "end": "00:05:57.720",
+      "text": "because that is the probability of the"
+    },
+    {
+      "start": "00:05:57.720",
+      "end": "00:05:59.670",
+      "text": "because that is the probability of the positive glass whatever that positive"
+    },
+    {
+      "start": "00:05:59.670",
+      "end": "00:05:59.680",
+      "text": "positive glass whatever that positive"
+    },
+    {
+      "start": "00:05:59.680",
+      "end": "00:06:02.909",
+      "text": "positive glass whatever that positive classes probably the dogs here uh and uh"
+    },
+    {
+      "start": "00:06:02.909",
+      "end": "00:06:02.919",
+      "text": "classes probably the dogs here uh and uh"
+    },
+    {
+      "start": "00:06:02.919",
+      "end": "00:06:04.870",
+      "text": "classes probably the dogs here uh and uh we are of course going to be using"
+    },
+    {
+      "start": "00:06:04.870",
+      "end": "00:06:04.880",
+      "text": "we are of course going to be using"
+    },
+    {
+      "start": "00:06:04.880",
+      "end": "00:06:07.270",
+      "text": "we are of course going to be using sigmoid uh because only at the output of"
+    },
+    {
+      "start": "00:06:07.270",
+      "end": "00:06:07.280",
+      "text": "sigmoid uh because only at the output of"
+    },
+    {
+      "start": "00:06:07.280",
+      "end": "00:06:09.870",
+      "text": "sigmoid uh because only at the output of the sigmoid we are actually getting this"
+    },
+    {
+      "start": "00:06:09.870",
+      "end": "00:06:09.880",
+      "text": "the sigmoid we are actually getting this"
+    },
+    {
+      "start": "00:06:09.880",
+      "end": "00:06:11.950",
+      "text": "the sigmoid we are actually getting this uh form of the posterior probability as"
+    },
+    {
+      "start": "00:06:11.950",
+      "end": "00:06:11.960",
+      "text": "uh form of the posterior probability as"
+    },
+    {
+      "start": "00:06:11.960",
+      "end": "00:06:14.350",
+      "text": "uh form of the posterior probability as we had discussed in the uh fully"
+    },
+    {
+      "start": "00:06:14.350",
+      "end": "00:06:14.360",
+      "text": "we had discussed in the uh fully"
+    },
+    {
+      "start": "00:06:14.360",
+      "end": "00:06:17.469",
+      "text": "we had discussed in the uh fully connected layers uh and in that in that"
+    },
+    {
+      "start": "00:06:17.469",
+      "end": "00:06:17.479",
+      "text": "connected layers uh and in that in that"
+    },
+    {
+      "start": "00:06:17.479",
+      "end": "00:06:19.589",
+      "text": "connected layers uh and in that in that uh lecture all right so this is"
+    },
+    {
+      "start": "00:06:19.589",
+      "end": "00:06:19.599",
+      "text": "uh lecture all right so this is"
+    },
+    {
+      "start": "00:06:19.599",
+      "end": "00:06:21.790",
+      "text": "uh lecture all right so this is basically our architecture uh very"
+    },
+    {
+      "start": "00:06:21.790",
+      "end": "00:06:21.800",
+      "text": "basically our architecture uh very"
+    },
+    {
+      "start": "00:06:21.800",
+      "end": "00:06:24.309",
+      "text": "basically our architecture uh very simple architecture uh the convolution"
+    },
+    {
+      "start": "00:06:24.309",
+      "end": "00:06:24.319",
+      "text": "simple architecture uh the convolution"
+    },
+    {
+      "start": "00:06:24.319",
+      "end": "00:06:26.670",
+      "text": "simple architecture uh the convolution portions the flatten and the fully"
+    },
+    {
+      "start": "00:06:26.670",
+      "end": "00:06:26.680",
+      "text": "portions the flatten and the fully"
+    },
+    {
+      "start": "00:06:26.680",
+      "end": "00:06:29.670",
+      "text": "portions the flatten and the fully connected or dense uh portion to provide"
+    },
+    {
+      "start": "00:06:29.670",
+      "end": "00:06:29.680",
+      "text": "connected or dense uh portion to provide"
+    },
+    {
+      "start": "00:06:29.680",
+      "end": "00:06:31.870",
+      "text": "connected or dense uh portion to provide the binary classification result at the"
+    },
+    {
+      "start": "00:06:31.870",
+      "end": "00:06:31.880",
+      "text": "the binary classification result at the"
+    },
+    {
+      "start": "00:06:31.880",
+      "end": "00:06:37.110",
+      "text": "the binary classification result at the output and here is the U details of"
+    },
+    {
+      "start": "00:06:37.110",
+      "end": "00:06:37.120",
+      "text": "output and here is the U details of"
+    },
+    {
+      "start": "00:06:37.120",
+      "end": "00:06:43.309",
+      "text": "output and here is the U details of um of our uh CNN so we can see uh the"
+    },
+    {
+      "start": "00:06:43.309",
+      "end": "00:06:43.319",
+      "text": "um of our uh CNN so we can see uh the"
+    },
+    {
+      "start": "00:06:43.319",
+      "end": "00:06:46.350",
+      "text": "um of our uh CNN so we can see uh the input uh images that are actually we"
+    },
+    {
+      "start": "00:06:46.350",
+      "end": "00:06:46.360",
+      "text": "input uh images that are actually we"
+    },
+    {
+      "start": "00:06:46.360",
+      "end": "00:06:50.950",
+      "text": "input uh images that are actually we coming in uh the uh first uh we have 32"
+    },
+    {
+      "start": "00:06:50.950",
+      "end": "00:06:50.960",
+      "text": "coming in uh the uh first uh we have 32"
+    },
+    {
+      "start": "00:06:50.960",
+      "end": "00:06:53.670",
+      "text": "coming in uh the uh first uh we have 32 filters as we discussed in terms of"
+    },
+    {
+      "start": "00:06:53.670",
+      "end": "00:06:53.680",
+      "text": "filters as we discussed in terms of"
+    },
+    {
+      "start": "00:06:53.680",
+      "end": "00:06:54.990",
+      "text": "filters as we discussed in terms of number of"
+    },
+    {
+      "start": "00:06:54.990",
+      "end": "00:06:55.000",
+      "text": "number of"
+    },
+    {
+      "start": "00:06:55.000",
+      "end": "00:06:57.749",
+      "text": "number of parameters um"
+    },
+    {
+      "start": "00:06:57.749",
+      "end": "00:06:57.759",
+      "text": "parameters um"
+    },
+    {
+      "start": "00:06:57.759",
+      "end": "00:07:01.790",
+      "text": "parameters um 896 18,000"
+    },
+    {
+      "start": "00:07:05.710",
+      "end": "00:07:05.720",
+      "text": "73,000 147,000 so all of these are"
+    },
+    {
+      "start": "00:07:05.720",
+      "end": "00:07:08.150",
+      "text": "73,000 147,000 so all of these are parameters that you see being quoted"
+    },
+    {
+      "start": "00:07:08.150",
+      "end": "00:07:08.160",
+      "text": "parameters that you see being quoted"
+    },
+    {
+      "start": "00:07:08.160",
+      "end": "00:07:11.510",
+      "text": "parameters that you see being quoted here in the uh next to the convolutional"
+    },
+    {
+      "start": "00:07:11.510",
+      "end": "00:07:11.520",
+      "text": "here in the uh next to the convolutional"
+    },
+    {
+      "start": "00:07:11.520",
+      "end": "00:07:14.629",
+      "text": "here in the uh next to the convolutional layers but um the most striking thing"
+    },
+    {
+      "start": "00:07:14.629",
+      "end": "00:07:14.639",
+      "text": "layers but um the most striking thing"
+    },
+    {
+      "start": "00:07:14.639",
+      "end": "00:07:17.869",
+      "text": "layers but um the most striking thing over here is this look at the number of"
+    },
+    {
+      "start": "00:07:17.869",
+      "end": "00:07:17.879",
+      "text": "over here is this look at the number of"
+    },
+    {
+      "start": "00:07:17.879",
+      "end": "00:07:20.070",
+      "text": "over here is this look at the number of parameters which are involved in the"
+    },
+    {
+      "start": "00:07:20.070",
+      "end": "00:07:20.080",
+      "text": "parameters which are involved in the"
+    },
+    {
+      "start": "00:07:20.080",
+      "end": "00:07:22.990",
+      "text": "parameters which are involved in the fully connected in one fully connected"
+    },
+    {
+      "start": "00:07:22.990",
+      "end": "00:07:23.000",
+      "text": "fully connected in one fully connected"
+    },
+    {
+      "start": "00:07:23.000",
+      "end": "00:07:26.510",
+      "text": "fully connected in one fully connected or dense layer 3.2 million parameters so"
+    },
+    {
+      "start": "00:07:26.510",
+      "end": "00:07:26.520",
+      "text": "or dense layer 3.2 million parameters so"
+    },
+    {
+      "start": "00:07:26.520",
+      "end": "00:07:29.110",
+      "text": "or dense layer 3.2 million parameters so out of the total 3 and A2 million"
+    },
+    {
+      "start": "00:07:29.110",
+      "end": "00:07:29.120",
+      "text": "out of the total 3 and A2 million"
+    },
+    {
+      "start": "00:07:29.120",
+      "end": "00:07:32.230",
+      "text": "out of the total 3 and A2 million parameters that we have 3.2 million are"
+    },
+    {
+      "start": "00:07:32.230",
+      "end": "00:07:32.240",
+      "text": "parameters that we have 3.2 million are"
+    },
+    {
+      "start": "00:07:32.240",
+      "end": "00:07:34.510",
+      "text": "parameters that we have 3.2 million are associated with a fully connected layer"
+    },
+    {
+      "start": "00:07:34.510",
+      "end": "00:07:34.520",
+      "text": "associated with a fully connected layer"
+    },
+    {
+      "start": "00:07:34.520",
+      "end": "00:07:38.189",
+      "text": "associated with a fully connected layer and here is the kind of uh striking"
+    },
+    {
+      "start": "00:07:38.189",
+      "end": "00:07:38.199",
+      "text": "and here is the kind of uh striking"
+    },
+    {
+      "start": "00:07:38.199",
+      "end": "00:07:42.309",
+      "text": "and here is the kind of uh striking example of um why it would make sense to"
+    },
+    {
+      "start": "00:07:42.309",
+      "end": "00:07:42.319",
+      "text": "example of um why it would make sense to"
+    },
+    {
+      "start": "00:07:42.319",
+      "end": "00:07:45.629",
+      "text": "example of um why it would make sense to actually uh use CNN for uh image"
+    },
+    {
+      "start": "00:07:45.629",
+      "end": "00:07:45.639",
+      "text": "actually uh use CNN for uh image"
+    },
+    {
+      "start": "00:07:45.639",
+      "end": "00:07:48.950",
+      "text": "actually uh use CNN for uh image classification if we didn't have the CNN"
+    },
+    {
+      "start": "00:07:48.950",
+      "end": "00:07:48.960",
+      "text": "classification if we didn't have the CNN"
+    },
+    {
+      "start": "00:07:48.960",
+      "end": "00:07:51.710",
+      "text": "classification if we didn't have the CNN and the associated advantage of that CNN"
+    },
+    {
+      "start": "00:07:51.710",
+      "end": "00:07:51.720",
+      "text": "and the associated advantage of that CNN"
+    },
+    {
+      "start": "00:07:51.720",
+      "end": "00:07:55.029",
+      "text": "and the associated advantage of that CNN provide which was actually also shown in"
+    },
+    {
+      "start": "00:07:55.029",
+      "end": "00:07:55.039",
+      "text": "provide which was actually also shown in"
+    },
+    {
+      "start": "00:07:55.039",
+      "end": "00:07:57.230",
+      "text": "provide which was actually also shown in this kind of snapshot architecture as"
+    },
+    {
+      "start": "00:07:57.230",
+      "end": "00:07:57.240",
+      "text": "this kind of snapshot architecture as"
+    },
+    {
+      "start": "00:07:57.240",
+      "end": "00:08:02.510",
+      "text": "this kind of snapshot architecture as you can see only the Loc"
+    },
+    {
+      "start": "00:08:06.469",
+      "end": "00:08:06.479",
+      "text": "pixels the the one which are which are"
+    },
+    {
+      "start": "00:08:06.479",
+      "end": "00:08:09.230",
+      "text": "pixels the the one which are which are local to the uh special dimensions of"
+    },
+    {
+      "start": "00:08:09.230",
+      "end": "00:08:09.240",
+      "text": "local to the uh special dimensions of"
+    },
+    {
+      "start": "00:08:09.240",
+      "end": "00:08:12.270",
+      "text": "local to the uh special dimensions of the filter are so so-called firing in"
+    },
+    {
+      "start": "00:08:12.270",
+      "end": "00:08:12.280",
+      "text": "the filter are so so-called firing in"
+    },
+    {
+      "start": "00:08:12.280",
+      "end": "00:08:15.629",
+      "text": "the filter are so so-called firing in order to produce that kind of scaler"
+    },
+    {
+      "start": "00:08:15.629",
+      "end": "00:08:15.639",
+      "text": "order to produce that kind of scaler"
+    },
+    {
+      "start": "00:08:15.639",
+      "end": "00:08:17.589",
+      "text": "order to produce that kind of scaler okay as compared to a fully connected"
+    },
+    {
+      "start": "00:08:17.589",
+      "end": "00:08:17.599",
+      "text": "okay as compared to a fully connected"
+    },
+    {
+      "start": "00:08:17.599",
+      "end": "00:08:19.309",
+      "text": "okay as compared to a fully connected architecture where everything that we"
+    },
+    {
+      "start": "00:08:19.309",
+      "end": "00:08:19.319",
+      "text": "architecture where everything that we"
+    },
+    {
+      "start": "00:08:19.319",
+      "end": "00:08:22.149",
+      "text": "architecture where everything that we have here is going to be connected to"
+    },
+    {
+      "start": "00:08:22.149",
+      "end": "00:08:22.159",
+      "text": "have here is going to be connected to"
+    },
+    {
+      "start": "00:08:22.159",
+      "end": "00:08:24.950",
+      "text": "have here is going to be connected to the layer um to to to form if you like"
+    },
+    {
+      "start": "00:08:24.950",
+      "end": "00:08:24.960",
+      "text": "the layer um to to to form if you like"
+    },
+    {
+      "start": "00:08:24.960",
+      "end": "00:08:28.589",
+      "text": "the layer um to to to form if you like the output scaler z uh the convolutions"
+    },
+    {
+      "start": "00:08:28.589",
+      "end": "00:08:28.599",
+      "text": "the output scaler z uh the convolutions"
+    },
+    {
+      "start": "00:08:28.599",
+      "end": "00:08:31.309",
+      "text": "the output scaler z uh the convolutions uh are operation is actually helping us"
+    },
+    {
+      "start": "00:08:31.309",
+      "end": "00:08:31.319",
+      "text": "uh are operation is actually helping us"
+    },
+    {
+      "start": "00:08:31.319",
+      "end": "00:08:34.029",
+      "text": "uh are operation is actually helping us to significantly reduce the number of"
+    },
+    {
+      "start": "00:08:34.029",
+      "end": "00:08:34.039",
+      "text": "to significantly reduce the number of"
+    },
+    {
+      "start": "00:08:34.039",
+      "end": "00:08:37.909",
+      "text": "to significantly reduce the number of parameters so uh at the end of the day"
+    },
+    {
+      "start": "00:08:37.909",
+      "end": "00:08:37.919",
+      "text": "parameters so uh at the end of the day"
+    },
+    {
+      "start": "00:08:37.919",
+      "end": "00:08:42.110",
+      "text": "parameters so uh at the end of the day uh we have u u the scalar that indicates"
+    },
+    {
+      "start": "00:08:42.110",
+      "end": "00:08:42.120",
+      "text": "uh we have u u the scalar that indicates"
+    },
+    {
+      "start": "00:08:42.120",
+      "end": "00:08:43.630",
+      "text": "uh we have u u the scalar that indicates the posterior probability of the"
+    },
+    {
+      "start": "00:08:43.630",
+      "end": "00:08:43.640",
+      "text": "the posterior probability of the"
+    },
+    {
+      "start": "00:08:43.640",
+      "end": "00:08:46.470",
+      "text": "the posterior probability of the positive class as we discussed and then"
+    },
+    {
+      "start": "00:08:46.470",
+      "end": "00:08:46.480",
+      "text": "positive class as we discussed and then"
+    },
+    {
+      "start": "00:08:46.480",
+      "end": "00:08:50.190",
+      "text": "positive class as we discussed and then uh the architecture is seems to be uh"
+    },
+    {
+      "start": "00:08:50.190",
+      "end": "00:08:50.200",
+      "text": "uh the architecture is seems to be uh"
+    },
+    {
+      "start": "00:08:50.200",
+      "end": "00:08:54.310",
+      "text": "uh the architecture is seems to be uh valid uh we are going to evidently going"
+    },
+    {
+      "start": "00:08:54.310",
+      "end": "00:08:54.320",
+      "text": "valid uh we are going to evidently going"
+    },
+    {
+      "start": "00:08:54.320",
+      "end": "00:08:57.269",
+      "text": "valid uh we are going to evidently going to use binary cross entropy just like"
+    },
+    {
+      "start": "00:08:57.269",
+      "end": "00:08:57.279",
+      "text": "to use binary cross entropy just like"
+    },
+    {
+      "start": "00:08:57.279",
+      "end": "00:08:59.870",
+      "text": "to use binary cross entropy just like what we have done earlier in uh that"
+    },
+    {
+      "start": "00:08:59.870",
+      "end": "00:08:59.880",
+      "text": "what we have done earlier in uh that"
+    },
+    {
+      "start": "00:08:59.880",
+      "end": "00:09:01.870",
+      "text": "what we have done earlier in uh that other video where we looked at dense"
+    },
+    {
+      "start": "00:09:01.870",
+      "end": "00:09:01.880",
+      "text": "other video where we looked at dense"
+    },
+    {
+      "start": "00:09:01.880",
+      "end": "00:09:04.269",
+      "text": "other video where we looked at dense layers only for binary classification or"
+    },
+    {
+      "start": "00:09:04.269",
+      "end": "00:09:04.279",
+      "text": "layers only for binary classification or"
+    },
+    {
+      "start": "00:09:04.279",
+      "end": "00:09:05.710",
+      "text": "layers only for binary classification or multiclass"
+    },
+    {
+      "start": "00:09:05.710",
+      "end": "00:09:05.720",
+      "text": "multiclass"
+    },
+    {
+      "start": "00:09:05.720",
+      "end": "00:09:08.030",
+      "text": "multiclass classification uh and uh we are going to"
+    },
+    {
+      "start": "00:09:08.030",
+      "end": "00:09:08.040",
+      "text": "classification uh and uh we are going to"
+    },
+    {
+      "start": "00:09:08.040",
+      "end": "00:09:10.710",
+      "text": "classification uh and uh we are going to have here well here the author selected"
+    },
+    {
+      "start": "00:09:10.710",
+      "end": "00:09:10.720",
+      "text": "have here well here the author selected"
+    },
+    {
+      "start": "00:09:10.720",
+      "end": "00:09:13.350",
+      "text": "have here well here the author selected the uh RMS prop which"
+    },
+    {
+      "start": "00:09:13.350",
+      "end": "00:09:13.360",
+      "text": "the uh RMS prop which"
+    },
+    {
+      "start": "00:09:13.360",
+      "end": "00:09:16.269",
+      "text": "the uh RMS prop which is uh one of the cousins of stochastic"
+    },
+    {
+      "start": "00:09:16.269",
+      "end": "00:09:16.279",
+      "text": "is uh one of the cousins of stochastic"
+    },
+    {
+      "start": "00:09:16.279",
+      "end": "00:09:19.069",
+      "text": "is uh one of the cousins of stochastic gr descent we haven't really got any"
+    },
+    {
+      "start": "00:09:19.069",
+      "end": "00:09:19.079",
+      "text": "gr descent we haven't really got any"
+    },
+    {
+      "start": "00:09:19.079",
+      "end": "00:09:21.030",
+      "text": "gr descent we haven't really got any discussion specifically on enhancements"
+    },
+    {
+      "start": "00:09:21.030",
+      "end": "00:09:21.040",
+      "text": "discussion specifically on enhancements"
+    },
+    {
+      "start": "00:09:21.040",
+      "end": "00:09:23.470",
+      "text": "discussion specifically on enhancements of stochastic gr descent but if you do"
+    },
+    {
+      "start": "00:09:23.470",
+      "end": "00:09:23.480",
+      "text": "of stochastic gr descent but if you do"
+    },
+    {
+      "start": "00:09:23.480",
+      "end": "00:09:25.990",
+      "text": "of stochastic gr descent but if you do replace it with SGD I think you will be"
+    },
+    {
+      "start": "00:09:25.990",
+      "end": "00:09:26.000",
+      "text": "replace it with SGD I think you will be"
+    },
+    {
+      "start": "00:09:26.000",
+      "end": "00:09:29.030",
+      "text": "replace it with SGD I think you will be getting very similar performance um with"
+    },
+    {
+      "start": "00:09:29.030",
+      "end": "00:09:29.040",
+      "text": "getting very similar performance um with"
+    },
+    {
+      "start": "00:09:29.040",
+      "end": "00:09:31.350",
+      "text": "getting very similar performance um with the corresponding learning parameter and"
+    },
+    {
+      "start": "00:09:31.350",
+      "end": "00:09:31.360",
+      "text": "the corresponding learning parameter and"
+    },
+    {
+      "start": "00:09:31.360",
+      "end": "00:09:33.350",
+      "text": "the corresponding learning parameter and then of course the metric is our"
+    },
+    {
+      "start": "00:09:33.350",
+      "end": "00:09:33.360",
+      "text": "then of course the metric is our"
+    },
+    {
+      "start": "00:09:33.360",
+      "end": "00:09:35.550",
+      "text": "then of course the metric is our accuracy and one of the things that we"
+    },
+    {
+      "start": "00:09:35.550",
+      "end": "00:09:35.560",
+      "text": "accuracy and one of the things that we"
+    },
+    {
+      "start": "00:09:35.560",
+      "end": "00:09:38.350",
+      "text": "accuracy and one of the things that we would like to point out in U in this"
+    },
+    {
+      "start": "00:09:38.350",
+      "end": "00:09:38.360",
+      "text": "would like to point out in U in this"
+    },
+    {
+      "start": "00:09:38.360",
+      "end": "00:09:40.310",
+      "text": "would like to point out in U in this kind of uh convolution and networks is"
+    },
+    {
+      "start": "00:09:40.310",
+      "end": "00:09:40.320",
+      "text": "kind of uh convolution and networks is"
+    },
+    {
+      "start": "00:09:40.320",
+      "end": "00:09:42.990",
+      "text": "kind of uh convolution and networks is that we will need to do to be careful"
+    },
+    {
+      "start": "00:09:42.990",
+      "end": "00:09:43.000",
+      "text": "that we will need to do to be careful"
+    },
+    {
+      "start": "00:09:43.000",
+      "end": "00:09:45.389",
+      "text": "that we will need to do to be careful when we uh first take a data set and we"
+    },
+    {
+      "start": "00:09:45.389",
+      "end": "00:09:45.399",
+      "text": "when we uh first take a data set and we"
+    },
+    {
+      "start": "00:09:45.399",
+      "end": "00:09:48.750",
+      "text": "when we uh first take a data set and we try to process the images as we have"
+    },
+    {
+      "start": "00:09:48.750",
+      "end": "00:09:48.760",
+      "text": "try to process the images as we have"
+    },
+    {
+      "start": "00:09:48.760",
+      "end": "00:09:51.350",
+      "text": "try to process the images as we have seen the images are typically given to"
+    },
+    {
+      "start": "00:09:51.350",
+      "end": "00:09:51.360",
+      "text": "seen the images are typically given to"
+    },
+    {
+      "start": "00:09:51.360",
+      "end": "00:09:53.870",
+      "text": "seen the images are typically given to us as uh with pixels corresponds to"
+    },
+    {
+      "start": "00:09:53.870",
+      "end": "00:09:53.880",
+      "text": "us as uh with pixels corresponds to"
+    },
+    {
+      "start": "00:09:53.880",
+      "end": "00:09:56.030",
+      "text": "us as uh with pixels corresponds to integer numbers so we have to uh"
+    },
+    {
+      "start": "00:09:56.030",
+      "end": "00:09:56.040",
+      "text": "integer numbers so we have to uh"
+    },
+    {
+      "start": "00:09:56.040",
+      "end": "00:09:59.069",
+      "text": "integer numbers so we have to uh definitely normalize them uh we have to"
+    },
+    {
+      "start": "00:09:59.069",
+      "end": "00:09:59.079",
+      "text": "definitely normalize them uh we have to"
+    },
+    {
+      "start": "00:09:59.079",
+      "end": "00:10:01.310",
+      "text": "definitely normalize them uh we have to B them we have to do a lot of this kind"
+    },
+    {
+      "start": "00:10:01.310",
+      "end": "00:10:01.320",
+      "text": "B them we have to do a lot of this kind"
+    },
+    {
+      "start": "00:10:01.320",
+      "end": "00:10:04.310",
+      "text": "B them we have to do a lot of this kind of transformations in order for us to"
+    },
+    {
+      "start": "00:10:04.310",
+      "end": "00:10:04.320",
+      "text": "of transformations in order for us to"
+    },
+    {
+      "start": "00:10:04.320",
+      "end": "00:10:07.630",
+      "text": "of transformations in order for us to produce uh the um the right uh inputs"
+    },
+    {
+      "start": "00:10:07.630",
+      "end": "00:10:07.640",
+      "text": "produce uh the um the right uh inputs"
+    },
+    {
+      "start": "00:10:07.640",
+      "end": "00:10:11.110",
+      "text": "produce uh the um the right uh inputs for the uh for for our Network so after"
+    },
+    {
+      "start": "00:10:11.110",
+      "end": "00:10:11.120",
+      "text": "for the uh for for our Network so after"
+    },
+    {
+      "start": "00:10:11.120",
+      "end": "00:10:13.190",
+      "text": "for the uh for for our Network so after a training process that involves"
+    },
+    {
+      "start": "00:10:13.190",
+      "end": "00:10:13.200",
+      "text": "a training process that involves"
+    },
+    {
+      "start": "00:10:13.200",
+      "end": "00:10:15.910",
+      "text": "a training process that involves multiple epochs as we would expect we"
+    },
+    {
+      "start": "00:10:15.910",
+      "end": "00:10:15.920",
+      "text": "multiple epochs as we would expect we"
+    },
+    {
+      "start": "00:10:15.920",
+      "end": "00:10:19.389",
+      "text": "multiple epochs as we would expect we have a model and uh we can actually plot"
+    },
+    {
+      "start": "00:10:19.389",
+      "end": "00:10:19.399",
+      "text": "have a model and uh we can actually plot"
+    },
+    {
+      "start": "00:10:19.399",
+      "end": "00:10:21.710",
+      "text": "have a model and uh we can actually plot the uh training and"
+    },
+    {
+      "start": "00:10:21.710",
+      "end": "00:10:21.720",
+      "text": "the uh training and"
+    },
+    {
+      "start": "00:10:21.720",
+      "end": "00:10:23.630",
+      "text": "the uh training and validation uh"
+    },
+    {
+      "start": "00:10:23.630",
+      "end": "00:10:23.640",
+      "text": "validation uh"
+    },
+    {
+      "start": "00:10:23.640",
+      "end": "00:10:26.509",
+      "text": "validation uh loss as well also the corresponding kind"
+    },
+    {
+      "start": "00:10:26.509",
+      "end": "00:10:26.519",
+      "text": "loss as well also the corresponding kind"
+    },
+    {
+      "start": "00:10:26.519",
+      "end": "00:10:29.310",
+      "text": "loss as well also the corresponding kind of accuracy and look at the corresp"
+    },
+    {
+      "start": "00:10:29.310",
+      "end": "00:10:29.320",
+      "text": "of accuracy and look at the corresp"
+    },
+    {
+      "start": "00:10:29.320",
+      "end": "00:10:31.750",
+      "text": "of accuracy and look at the corresp responding loss over here plot as the"
+    },
+    {
+      "start": "00:10:31.750",
+      "end": "00:10:31.760",
+      "text": "responding loss over here plot as the"
+    },
+    {
+      "start": "00:10:31.760",
+      "end": "00:10:35.389",
+      "text": "responding loss over here plot as the number of epochs and uh remember what we"
+    },
+    {
+      "start": "00:10:35.389",
+      "end": "00:10:35.399",
+      "text": "number of epochs and uh remember what we"
+    },
+    {
+      "start": "00:10:35.399",
+      "end": "00:10:38.230",
+      "text": "number of epochs and uh remember what we have said in at the another video"
+    },
+    {
+      "start": "00:10:38.230",
+      "end": "00:10:38.240",
+      "text": "have said in at the another video"
+    },
+    {
+      "start": "00:10:38.240",
+      "end": "00:10:41.430",
+      "text": "have said in at the another video regarding uh the uh condition of"
+    },
+    {
+      "start": "00:10:41.430",
+      "end": "00:10:41.440",
+      "text": "regarding uh the uh condition of"
+    },
+    {
+      "start": "00:10:41.440",
+      "end": "00:10:43.430",
+      "text": "regarding uh the uh condition of overfitting and at that time the"
+    },
+    {
+      "start": "00:10:43.430",
+      "end": "00:10:43.440",
+      "text": "overfitting and at that time the"
+    },
+    {
+      "start": "00:10:43.440",
+      "end": "00:10:46.590",
+      "text": "overfitting and at that time the discussion was an example of a linear"
+    },
+    {
+      "start": "00:10:46.590",
+      "end": "00:10:46.600",
+      "text": "discussion was an example of a linear"
+    },
+    {
+      "start": "00:10:46.600",
+      "end": "00:10:49.190",
+      "text": "discussion was an example of a linear model on the regression task over here"
+    },
+    {
+      "start": "00:10:49.190",
+      "end": "00:10:49.200",
+      "text": "model on the regression task over here"
+    },
+    {
+      "start": "00:10:49.200",
+      "end": "00:10:51.990",
+      "text": "model on the regression task over here we have a classification task but the"
+    },
+    {
+      "start": "00:10:51.990",
+      "end": "00:10:52.000",
+      "text": "we have a classification task but the"
+    },
+    {
+      "start": "00:10:52.000",
+      "end": "00:10:53.910",
+      "text": "we have a classification task but the the sort of problem of over fitting is"
+    },
+    {
+      "start": "00:10:53.910",
+      "end": "00:10:53.920",
+      "text": "the sort of problem of over fitting is"
+    },
+    {
+      "start": "00:10:53.920",
+      "end": "00:10:57.350",
+      "text": "the sort of problem of over fitting is present in across tasks in in in machine"
+    },
+    {
+      "start": "00:10:57.350",
+      "end": "00:10:57.360",
+      "text": "present in across tasks in in in machine"
+    },
+    {
+      "start": "00:10:57.360",
+      "end": "00:10:59.910",
+      "text": "present in across tasks in in in machine learning so we see some quite"
+    },
+    {
+      "start": "00:10:59.910",
+      "end": "00:10:59.920",
+      "text": "learning so we see some quite"
+    },
+    {
+      "start": "00:10:59.920",
+      "end": "00:11:02.509",
+      "text": "learning so we see some quite significant difference uh between"
+    },
+    {
+      "start": "00:11:02.509",
+      "end": "00:11:02.519",
+      "text": "significant difference uh between"
+    },
+    {
+      "start": "00:11:02.519",
+      "end": "00:11:05.670",
+      "text": "significant difference uh between training and validation as the accuracy"
+    },
+    {
+      "start": "00:11:05.670",
+      "end": "00:11:05.680",
+      "text": "training and validation as the accuracy"
+    },
+    {
+      "start": "00:11:05.680",
+      "end": "00:11:06.550",
+      "text": "training and validation as the accuracy is"
+    },
+    {
+      "start": "00:11:06.550",
+      "end": "00:11:06.560",
+      "text": "is"
+    },
+    {
+      "start": "00:11:06.560",
+      "end": "00:11:08.910",
+      "text": "is improving and that is really what we"
+    },
+    {
+      "start": "00:11:08.910",
+      "end": "00:11:08.920",
+      "text": "improving and that is really what we"
+    },
+    {
+      "start": "00:11:08.920",
+      "end": "00:11:12.470",
+      "text": "improving and that is really what we have said earlier as an a good indicator"
+    },
+    {
+      "start": "00:11:12.470",
+      "end": "00:11:12.480",
+      "text": "have said earlier as an a good indicator"
+    },
+    {
+      "start": "00:11:12.480",
+      "end": "00:11:15.750",
+      "text": "have said earlier as an a good indicator of overfitting okay so uh it seems that"
+    },
+    {
+      "start": "00:11:15.750",
+      "end": "00:11:15.760",
+      "text": "of overfitting okay so uh it seems that"
+    },
+    {
+      "start": "00:11:15.760",
+      "end": "00:11:18.269",
+      "text": "of overfitting okay so uh it seems that the um Network that we have designed"
+    },
+    {
+      "start": "00:11:18.269",
+      "end": "00:11:18.279",
+      "text": "the um Network that we have designed"
+    },
+    {
+      "start": "00:11:18.279",
+      "end": "00:11:20.350",
+      "text": "the um Network that we have designed over here overfits the data set we are"
+    },
+    {
+      "start": "00:11:20.350",
+      "end": "00:11:20.360",
+      "text": "over here overfits the data set we are"
+    },
+    {
+      "start": "00:11:20.360",
+      "end": "00:11:22.269",
+      "text": "over here overfits the data set we are given and it shouldn't be a complete"
+    },
+    {
+      "start": "00:11:22.269",
+      "end": "00:11:22.279",
+      "text": "given and it shouldn't be a complete"
+    },
+    {
+      "start": "00:11:22.279",
+      "end": "00:11:24.710",
+      "text": "given and it shouldn't be a complete surprise to us given the fact that we"
+    },
+    {
+      "start": "00:11:24.710",
+      "end": "00:11:24.720",
+      "text": "surprise to us given the fact that we"
+    },
+    {
+      "start": "00:11:24.720",
+      "end": "00:11:27.389",
+      "text": "surprise to us given the fact that we are throwing a significant number of"
+    },
+    {
+      "start": "00:11:27.389",
+      "end": "00:11:27.399",
+      "text": "are throwing a significant number of"
+    },
+    {
+      "start": "00:11:27.399",
+      "end": "00:11:30.350",
+      "text": "are throwing a significant number of parameters um in um"
+    },
+    {
+      "start": "00:11:30.350",
+      "end": "00:11:30.360",
+      "text": "parameters um in um"
+    },
+    {
+      "start": "00:11:30.360",
+      "end": "00:11:33.030",
+      "text": "parameters um in um in a network in a data set which only"
+    },
+    {
+      "start": "00:11:33.030",
+      "end": "00:11:33.040",
+      "text": "in a network in a data set which only"
+    },
+    {
+      "start": "00:11:33.040",
+      "end": "00:11:37.150",
+      "text": "in a network in a data set which only has a th000 labels per class and so uh"
+    },
+    {
+      "start": "00:11:37.150",
+      "end": "00:11:37.160",
+      "text": "has a th000 labels per class and so uh"
+    },
+    {
+      "start": "00:11:37.160",
+      "end": "00:11:39.069",
+      "text": "has a th000 labels per class and so uh we can actually engage any of the"
+    },
+    {
+      "start": "00:11:39.069",
+      "end": "00:11:39.079",
+      "text": "we can actually engage any of the"
+    },
+    {
+      "start": "00:11:39.079",
+      "end": "00:11:41.110",
+      "text": "we can actually engage any of the techniques that we have seen in"
+    },
+    {
+      "start": "00:11:41.110",
+      "end": "00:11:41.120",
+      "text": "techniques that we have seen in"
+    },
+    {
+      "start": "00:11:41.120",
+      "end": "00:11:43.430",
+      "text": "techniques that we have seen in overfitting uh to address overfitting"
+    },
+    {
+      "start": "00:11:43.430",
+      "end": "00:11:43.440",
+      "text": "overfitting uh to address overfitting"
+    },
+    {
+      "start": "00:11:43.440",
+      "end": "00:11:45.470",
+      "text": "overfitting uh to address overfitting such as weight Decay any of the"
+    },
+    {
+      "start": "00:11:45.470",
+      "end": "00:11:45.480",
+      "text": "such as weight Decay any of the"
+    },
+    {
+      "start": "00:11:45.480",
+      "end": "00:11:47.550",
+      "text": "such as weight Decay any of the regularization techniques that we have"
+    },
+    {
+      "start": "00:11:47.550",
+      "end": "00:11:47.560",
+      "text": "regularization techniques that we have"
+    },
+    {
+      "start": "00:11:47.560",
+      "end": "00:11:49.230",
+      "text": "regularization techniques that we have seen also in neuron networks to to"
+    },
+    {
+      "start": "00:11:49.230",
+      "end": "00:11:49.240",
+      "text": "seen also in neuron networks to to"
+    },
+    {
+      "start": "00:11:49.240",
+      "end": "00:11:51.030",
+      "text": "seen also in neuron networks to to address it but in computer vision we"
+    },
+    {
+      "start": "00:11:51.030",
+      "end": "00:11:51.040",
+      "text": "address it but in computer vision we"
+    },
+    {
+      "start": "00:11:51.040",
+      "end": "00:11:53.389",
+      "text": "address it but in computer vision we have something else that could actually"
+    },
+    {
+      "start": "00:11:53.389",
+      "end": "00:11:53.399",
+      "text": "have something else that could actually"
+    },
+    {
+      "start": "00:11:53.399",
+      "end": "00:11:56.269",
+      "text": "have something else that could actually help us and this is actually called the"
+    },
+    {
+      "start": "00:11:56.269",
+      "end": "00:11:56.279",
+      "text": "help us and this is actually called the"
+    },
+    {
+      "start": "00:11:56.279",
+      "end": "00:11:58.550",
+      "text": "help us and this is actually called the documentation so I think it's worthwhile"
+    },
+    {
+      "start": "00:11:58.550",
+      "end": "00:11:58.560",
+      "text": "documentation so I think it's worthwhile"
+    },
+    {
+      "start": "00:11:58.560",
+      "end": "00:12:00.150",
+      "text": "documentation so I think it's worthwhile going through"
+    },
+    {
+      "start": "00:12:00.150",
+      "end": "00:12:00.160",
+      "text": "going through"
+    },
+    {
+      "start": "00:12:00.160",
+      "end": "00:12:03.190",
+      "text": "going through uh the data augmentation because it is"
+    },
+    {
+      "start": "00:12:03.190",
+      "end": "00:12:03.200",
+      "text": "uh the data augmentation because it is"
+    },
+    {
+      "start": "00:12:03.200",
+      "end": "00:12:05.310",
+      "text": "uh the data augmentation because it is really a fairly straightforward and"
+    },
+    {
+      "start": "00:12:05.310",
+      "end": "00:12:05.320",
+      "text": "really a fairly straightforward and"
+    },
+    {
+      "start": "00:12:05.320",
+      "end": "00:12:07.710",
+      "text": "really a fairly straightforward and widely used approach to avoid the"
+    },
+    {
+      "start": "00:12:07.710",
+      "end": "00:12:07.720",
+      "text": "widely used approach to avoid the"
+    },
+    {
+      "start": "00:12:07.720",
+      "end": "00:12:09.470",
+      "text": "widely used approach to avoid the situation such as this where we have"
+    },
+    {
+      "start": "00:12:09.470",
+      "end": "00:12:09.480",
+      "text": "situation such as this where we have"
+    },
+    {
+      "start": "00:12:09.480",
+      "end": "00:12:11.790",
+      "text": "situation such as this where we have overfeeding so in that augmentation what"
+    },
+    {
+      "start": "00:12:11.790",
+      "end": "00:12:11.800",
+      "text": "overfeeding so in that augmentation what"
+    },
+    {
+      "start": "00:12:11.800",
+      "end": "00:12:14.509",
+      "text": "overfeeding so in that augmentation what we actually do we are taking the input"
+    },
+    {
+      "start": "00:12:14.509",
+      "end": "00:12:14.519",
+      "text": "we actually do we are taking the input"
+    },
+    {
+      "start": "00:12:14.519",
+      "end": "00:12:16.910",
+      "text": "we actually do we are taking the input images and given the fact that we have"
+    },
+    {
+      "start": "00:12:16.910",
+      "end": "00:12:16.920",
+      "text": "images and given the fact that we have"
+    },
+    {
+      "start": "00:12:16.920",
+      "end": "00:12:19.030",
+      "text": "images and given the fact that we have the knowledge of the class we try to"
+    },
+    {
+      "start": "00:12:19.030",
+      "end": "00:12:19.040",
+      "text": "the knowledge of the class we try to"
+    },
+    {
+      "start": "00:12:19.040",
+      "end": "00:12:21.470",
+      "text": "the knowledge of the class we try to transform these input images in creating"
+    },
+    {
+      "start": "00:12:21.470",
+      "end": "00:12:21.480",
+      "text": "transform these input images in creating"
+    },
+    {
+      "start": "00:12:21.480",
+      "end": "00:12:24.150",
+      "text": "transform these input images in creating more data so that's the an artificial"
+    },
+    {
+      "start": "00:12:24.150",
+      "end": "00:12:24.160",
+      "text": "more data so that's the an artificial"
+    },
+    {
+      "start": "00:12:24.160",
+      "end": "00:12:25.990",
+      "text": "more data so that's the an artificial way of increasing the number of labels"
+    },
+    {
+      "start": "00:12:25.990",
+      "end": "00:12:26.000",
+      "text": "way of increasing the number of labels"
+    },
+    {
+      "start": "00:12:26.000",
+      "end": "00:12:28.670",
+      "text": "way of increasing the number of labels we have in our data set we we have"
+    },
+    {
+      "start": "00:12:28.670",
+      "end": "00:12:28.680",
+      "text": "we have in our data set we we have"
+    },
+    {
+      "start": "00:12:28.680",
+      "end": "00:12:30.509",
+      "text": "we have in our data set we we have various kind of Transformations we may"
+    },
+    {
+      "start": "00:12:30.509",
+      "end": "00:12:30.519",
+      "text": "various kind of Transformations we may"
+    },
+    {
+      "start": "00:12:30.519",
+      "end": "00:12:34.670",
+      "text": "various kind of Transformations we may be shifting rotating images we may"
+    },
+    {
+      "start": "00:12:34.670",
+      "end": "00:12:34.680",
+      "text": "be shifting rotating images we may"
+    },
+    {
+      "start": "00:12:34.680",
+      "end": "00:12:37.910",
+      "text": "be shifting rotating images we may sharing uh the image uh we have we are"
+    },
+    {
+      "start": "00:12:37.910",
+      "end": "00:12:37.920",
+      "text": "sharing uh the image uh we have we are"
+    },
+    {
+      "start": "00:12:37.920",
+      "end": "00:12:40.829",
+      "text": "sharing uh the image uh we have we are zooming in zooming out uh and uh"
+    },
+    {
+      "start": "00:12:40.829",
+      "end": "00:12:40.839",
+      "text": "zooming in zooming out uh and uh"
+    },
+    {
+      "start": "00:12:40.839",
+      "end": "00:12:43.509",
+      "text": "zooming in zooming out uh and uh flipping and so on we are definitely"
+    },
+    {
+      "start": "00:12:43.509",
+      "end": "00:12:43.519",
+      "text": "flipping and so on we are definitely"
+    },
+    {
+      "start": "00:12:43.519",
+      "end": "00:12:47.949",
+      "text": "flipping and so on we are definitely going to be creating some uh nasty uh"
+    },
+    {
+      "start": "00:12:47.949",
+      "end": "00:12:47.959",
+      "text": "going to be creating some uh nasty uh"
+    },
+    {
+      "start": "00:12:47.959",
+      "end": "00:12:51.509",
+      "text": "going to be creating some uh nasty uh cats um or dogs uh but definitely this"
+    },
+    {
+      "start": "00:12:51.509",
+      "end": "00:12:51.519",
+      "text": "cats um or dogs uh but definitely this"
+    },
+    {
+      "start": "00:12:51.519",
+      "end": "00:12:55.230",
+      "text": "cats um or dogs uh but definitely this helps our Network to not overfit and so"
+    },
+    {
+      "start": "00:12:55.230",
+      "end": "00:12:55.240",
+      "text": "helps our Network to not overfit and so"
+    },
+    {
+      "start": "00:12:55.240",
+      "end": "00:12:58.150",
+      "text": "helps our Network to not overfit and so if you are to just keep the exactly the"
+    },
+    {
+      "start": "00:12:58.150",
+      "end": "00:12:58.160",
+      "text": "if you are to just keep the exactly the"
+    },
+    {
+      "start": "00:12:58.160",
+      "end": "00:13:00.470",
+      "text": "if you are to just keep the exactly the same network chitecture as we have seen"
+    },
+    {
+      "start": "00:13:00.470",
+      "end": "00:13:00.480",
+      "text": "same network chitecture as we have seen"
+    },
+    {
+      "start": "00:13:00.480",
+      "end": "00:13:03.509",
+      "text": "same network chitecture as we have seen earlier not not touch at all the model"
+    },
+    {
+      "start": "00:13:03.509",
+      "end": "00:13:03.519",
+      "text": "earlier not not touch at all the model"
+    },
+    {
+      "start": "00:13:03.519",
+      "end": "00:13:05.990",
+      "text": "earlier not not touch at all the model but definitely train the model with this"
+    },
+    {
+      "start": "00:13:05.990",
+      "end": "00:13:06.000",
+      "text": "but definitely train the model with this"
+    },
+    {
+      "start": "00:13:06.000",
+      "end": "00:13:09.629",
+      "text": "but definitely train the model with this additional kind of uh data set uh then"
+    },
+    {
+      "start": "00:13:09.629",
+      "end": "00:13:09.639",
+      "text": "additional kind of uh data set uh then"
+    },
+    {
+      "start": "00:13:09.639",
+      "end": "00:13:13.509",
+      "text": "additional kind of uh data set uh then uh uh look what happened uh we have a"
+    },
+    {
+      "start": "00:13:13.509",
+      "end": "00:13:13.519",
+      "text": "uh uh look what happened uh we have a"
+    },
+    {
+      "start": "00:13:13.519",
+      "end": "00:13:16.310",
+      "text": "uh uh look what happened uh we have a training and validation loss which are"
+    },
+    {
+      "start": "00:13:16.310",
+      "end": "00:13:16.320",
+      "text": "training and validation loss which are"
+    },
+    {
+      "start": "00:13:16.320",
+      "end": "00:13:18.509",
+      "text": "training and validation loss which are very close to each other so we actually"
+    },
+    {
+      "start": "00:13:18.509",
+      "end": "00:13:18.519",
+      "text": "very close to each other so we actually"
+    },
+    {
+      "start": "00:13:18.519",
+      "end": "00:13:21.590",
+      "text": "very close to each other so we actually have solved the uh overfeeding problem"
+    },
+    {
+      "start": "00:13:21.590",
+      "end": "00:13:21.600",
+      "text": "have solved the uh overfeeding problem"
+    },
+    {
+      "start": "00:13:21.600",
+      "end": "00:13:24.990",
+      "text": "have solved the uh overfeeding problem and our accuracy is uh both in terms of"
+    },
+    {
+      "start": "00:13:24.990",
+      "end": "00:13:25.000",
+      "text": "and our accuracy is uh both in terms of"
+    },
+    {
+      "start": "00:13:25.000",
+      "end": "00:13:27.150",
+      "text": "and our accuracy is uh both in terms of training and validation are also very"
+    },
+    {
+      "start": "00:13:27.150",
+      "end": "00:13:27.160",
+      "text": "training and validation are also very"
+    },
+    {
+      "start": "00:13:27.160",
+      "end": "00:13:29.949",
+      "text": "training and validation are also very close and close to some something like"
+    },
+    {
+      "start": "00:13:29.949",
+      "end": "00:13:29.959",
+      "text": "close and close to some something like"
+    },
+    {
+      "start": "00:13:29.959",
+      "end": "00:13:32.189",
+      "text": "close and close to some something like 85% okay so I think this is a good"
+    },
+    {
+      "start": "00:13:32.189",
+      "end": "00:13:32.199",
+      "text": "85% okay so I think this is a good"
+    },
+    {
+      "start": "00:13:32.199",
+      "end": "00:13:37.710",
+      "text": "85% okay so I think this is a good example to showcase the U uh CNN models"
+    },
+    {
+      "start": "00:13:37.710",
+      "end": "00:13:37.720",
+      "text": "example to showcase the U uh CNN models"
+    },
+    {
+      "start": "00:13:37.720",
+      "end": "00:13:40.310",
+      "text": "example to showcase the U uh CNN models uh as a as working for the simple task"
+    },
+    {
+      "start": "00:13:40.310",
+      "end": "00:13:40.320",
+      "text": "uh as a as working for the simple task"
+    },
+    {
+      "start": "00:13:40.320",
+      "end": "00:13:42.829",
+      "text": "uh as a as working for the simple task of image classification and what we"
+    },
+    {
+      "start": "00:13:42.829",
+      "end": "00:13:42.839",
+      "text": "of image classification and what we"
+    },
+    {
+      "start": "00:13:42.839",
+      "end": "00:13:45.269",
+      "text": "of image classification and what we actually also would like to understand"
+    },
+    {
+      "start": "00:13:45.269",
+      "end": "00:13:45.279",
+      "text": "actually also would like to understand"
+    },
+    {
+      "start": "00:13:45.279",
+      "end": "00:13:48.310",
+      "text": "actually also would like to understand now next is um what we have said earlier"
+    },
+    {
+      "start": "00:13:48.310",
+      "end": "00:13:48.320",
+      "text": "now next is um what we have said earlier"
+    },
+    {
+      "start": "00:13:48.320",
+      "end": "00:13:51.590",
+      "text": "now next is um what we have said earlier about Hey what how can we have some kind"
+    },
+    {
+      "start": "00:13:51.590",
+      "end": "00:13:51.600",
+      "text": "about Hey what how can we have some kind"
+    },
+    {
+      "start": "00:13:51.600",
+      "end": "00:13:54.910",
+      "text": "about Hey what how can we have some kind of visualization into the internals of"
+    },
+    {
+      "start": "00:13:54.910",
+      "end": "00:13:54.920",
+      "text": "of visualization into the internals of"
+    },
+    {
+      "start": "00:13:54.920",
+      "end": "00:13:57.749",
+      "text": "of visualization into the internals of the CNN to understand what is uh what is"
+    },
+    {
+      "start": "00:13:57.749",
+      "end": "00:13:57.759",
+      "text": "the CNN to understand what is uh what is"
+    },
+    {
+      "start": "00:13:57.759",
+      "end": "00:13:59.670",
+      "text": "the CNN to understand what is uh what is actually learning and and this is what"
+    },
+    {
+      "start": "00:13:59.670",
+      "end": "00:13:59.680",
+      "text": "actually learning and and this is what"
+    },
+    {
+      "start": "00:13:59.680",
+      "end": "00:14:03.920",
+      "text": "actually learning and and this is what we will be discussing next"
+    }
+  ]
+}

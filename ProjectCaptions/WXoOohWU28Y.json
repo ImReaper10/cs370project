@@ -1,0 +1,2916 @@
+{
+  "video_id": "WXoOohWU28Y",
+  "title": "2 convolution",
+  "captions": [
+    {
+      "start": "00:00:01.990",
+      "end": "00:00:02.000",
+      "text": "to start understanding what is really"
+    },
+    {
+      "start": "00:00:02.000",
+      "end": "00:00:04.390",
+      "text": "to start understanding what is really the uh fundamental operation happen"
+    },
+    {
+      "start": "00:00:04.390",
+      "end": "00:00:04.400",
+      "text": "the uh fundamental operation happen"
+    },
+    {
+      "start": "00:00:04.400",
+      "end": "00:00:06.070",
+      "text": "the uh fundamental operation happen inside those convolutional neuron"
+    },
+    {
+      "start": "00:00:06.070",
+      "end": "00:00:06.080",
+      "text": "inside those convolutional neuron"
+    },
+    {
+      "start": "00:00:06.080",
+      "end": "00:00:08.589",
+      "text": "inside those convolutional neuron networks let me just start with a a"
+    },
+    {
+      "start": "00:00:08.589",
+      "end": "00:00:08.599",
+      "text": "networks let me just start with a a"
+    },
+    {
+      "start": "00:00:08.599",
+      "end": "00:00:11.310",
+      "text": "networks let me just start with a a simple problem and this problem goes as"
+    },
+    {
+      "start": "00:00:11.310",
+      "end": "00:00:11.320",
+      "text": "simple problem and this problem goes as"
+    },
+    {
+      "start": "00:00:11.320",
+      "end": "00:00:13.950",
+      "text": "simple problem and this problem goes as follows I have somewhere in this kind of"
+    },
+    {
+      "start": "00:00:13.950",
+      "end": "00:00:13.960",
+      "text": "follows I have somewhere in this kind of"
+    },
+    {
+      "start": "00:00:13.960",
+      "end": "00:00:16.230",
+      "text": "follows I have somewhere in this kind of time axis a"
+    },
+    {
+      "start": "00:00:16.230",
+      "end": "00:00:16.240",
+      "text": "time axis a"
+    },
+    {
+      "start": "00:00:16.240",
+      "end": "00:00:19.150",
+      "text": "time axis a signal uh this is uh the duration of"
+    },
+    {
+      "start": "00:00:19.150",
+      "end": "00:00:19.160",
+      "text": "signal uh this is uh the duration of"
+    },
+    {
+      "start": "00:00:19.160",
+      "end": "00:00:21.029",
+      "text": "signal uh this is uh the duration of this signal and the shape of the signal"
+    },
+    {
+      "start": "00:00:21.029",
+      "end": "00:00:21.039",
+      "text": "this signal and the shape of the signal"
+    },
+    {
+      "start": "00:00:21.039",
+      "end": "00:00:22.550",
+      "text": "this signal and the shape of the signal is not really important but what is"
+    },
+    {
+      "start": "00:00:22.550",
+      "end": "00:00:22.560",
+      "text": "is not really important but what is"
+    },
+    {
+      "start": "00:00:22.560",
+      "end": "00:00:24.109",
+      "text": "is not really important but what is really important is the assumption that"
+    },
+    {
+      "start": "00:00:24.109",
+      "end": "00:00:24.119",
+      "text": "really important is the assumption that"
+    },
+    {
+      "start": "00:00:24.119",
+      "end": "00:00:27.109",
+      "text": "really important is the assumption that I do know the shape of that signal and"
+    },
+    {
+      "start": "00:00:27.109",
+      "end": "00:00:27.119",
+      "text": "I do know the shape of that signal and"
+    },
+    {
+      "start": "00:00:27.119",
+      "end": "00:00:29.189",
+      "text": "I do know the shape of that signal and let's assume that I have let's say call"
+    },
+    {
+      "start": "00:00:29.189",
+      "end": "00:00:29.199",
+      "text": "let's assume that I have let's say call"
+    },
+    {
+      "start": "00:00:29.199",
+      "end": "00:00:32.350",
+      "text": "let's assume that I have let's say call this signal this signal X oft and ask"
+    },
+    {
+      "start": "00:00:32.350",
+      "end": "00:00:32.360",
+      "text": "this signal this signal X oft and ask"
+    },
+    {
+      "start": "00:00:32.360",
+      "end": "00:00:35.470",
+      "text": "this signal this signal X oft and ask you the question as to can we come up"
+    },
+    {
+      "start": "00:00:35.470",
+      "end": "00:00:35.480",
+      "text": "you the question as to can we come up"
+    },
+    {
+      "start": "00:00:35.480",
+      "end": "00:00:37.630",
+      "text": "you the question as to can we come up with a method that we can sort of"
+    },
+    {
+      "start": "00:00:37.630",
+      "end": "00:00:37.640",
+      "text": "with a method that we can sort of"
+    },
+    {
+      "start": "00:00:37.640",
+      "end": "00:00:40.910",
+      "text": "with a method that we can sort of provide uh the location of that uh"
+    },
+    {
+      "start": "00:00:40.910",
+      "end": "00:00:40.920",
+      "text": "provide uh the location of that uh"
+    },
+    {
+      "start": "00:00:40.920",
+      "end": "00:00:43.990",
+      "text": "provide uh the location of that uh signal where about in this uh buffer"
+    },
+    {
+      "start": "00:00:43.990",
+      "end": "00:00:44.000",
+      "text": "signal where about in this uh buffer"
+    },
+    {
+      "start": "00:00:44.000",
+      "end": "00:00:47.830",
+      "text": "signal where about in this uh buffer let's say U uh of the signal is located"
+    },
+    {
+      "start": "00:00:47.830",
+      "end": "00:00:47.840",
+      "text": "let's say U uh of the signal is located"
+    },
+    {
+      "start": "00:00:47.840",
+      "end": "00:00:51.270",
+      "text": "let's say U uh of the signal is located okay so a simple kind of approach that"
+    },
+    {
+      "start": "00:00:51.270",
+      "end": "00:00:51.280",
+      "text": "okay so a simple kind of approach that"
+    },
+    {
+      "start": "00:00:51.280",
+      "end": "00:00:55.229",
+      "text": "okay so a simple kind of approach that we can think of is the following um"
+    },
+    {
+      "start": "00:00:55.229",
+      "end": "00:00:55.239",
+      "text": "we can think of is the following um"
+    },
+    {
+      "start": "00:00:55.239",
+      "end": "00:00:57.470",
+      "text": "we can think of is the following um since we know the shape of this kind of"
+    },
+    {
+      "start": "00:00:57.470",
+      "end": "00:00:57.480",
+      "text": "since we know the shape of this kind of"
+    },
+    {
+      "start": "00:00:57.480",
+      "end": "00:00:59.389",
+      "text": "since we know the shape of this kind of signal I can actually start at the"
+    },
+    {
+      "start": "00:00:59.389",
+      "end": "00:00:59.399",
+      "text": "signal I can actually start at the"
+    },
+    {
+      "start": "00:00:59.399",
+      "end": "00:01:03.069",
+      "text": "signal I can actually start at the beginning of this uh buffer at this"
+    },
+    {
+      "start": "00:01:03.069",
+      "end": "00:01:03.079",
+      "text": "beginning of this uh buffer at this"
+    },
+    {
+      "start": "00:01:03.079",
+      "end": "00:01:07.390",
+      "text": "beginning of this uh buffer at this location let say zero and for every um"
+    },
+    {
+      "start": "00:01:07.390",
+      "end": "00:01:07.400",
+      "text": "location let say zero and for every um"
+    },
+    {
+      "start": "00:01:07.400",
+      "end": "00:01:11.030",
+      "text": "location let say zero and for every um uh position if you like uh the"
+    },
+    {
+      "start": "00:01:11.030",
+      "end": "00:01:11.040",
+      "text": "uh position if you like uh the"
+    },
+    {
+      "start": "00:01:11.040",
+      "end": "00:01:13.310",
+      "text": "uh position if you like uh the hypothesis the you know that the buffer"
+    },
+    {
+      "start": "00:01:13.310",
+      "end": "00:01:13.320",
+      "text": "hypothesis the you know that the buffer"
+    },
+    {
+      "start": "00:01:13.320",
+      "end": "00:01:14.910",
+      "text": "hypothesis the you know that the buffer is the signal is located at this"
+    },
+    {
+      "start": "00:01:14.910",
+      "end": "00:01:14.920",
+      "text": "is the signal is located at this"
+    },
+    {
+      "start": "00:01:14.920",
+      "end": "00:01:18.310",
+      "text": "is the signal is located at this specific uh point and start making an"
+    },
+    {
+      "start": "00:01:18.310",
+      "end": "00:01:18.320",
+      "text": "specific uh point and start making an"
+    },
+    {
+      "start": "00:01:18.320",
+      "end": "00:01:21.710",
+      "text": "specific uh point and start making an operation that will uh effectively means"
+    },
+    {
+      "start": "00:01:21.710",
+      "end": "00:01:21.720",
+      "text": "operation that will uh effectively means"
+    },
+    {
+      "start": "00:01:21.720",
+      "end": "00:01:24.069",
+      "text": "operation that will uh effectively means uh taking the dot product between the"
+    },
+    {
+      "start": "00:01:24.069",
+      "end": "00:01:24.079",
+      "text": "uh taking the dot product between the"
+    },
+    {
+      "start": "00:01:24.079",
+      "end": "00:01:27.710",
+      "text": "uh taking the dot product between the contents of that buffer and that"
+    },
+    {
+      "start": "00:01:27.710",
+      "end": "00:01:27.720",
+      "text": "contents of that buffer and that"
+    },
+    {
+      "start": "00:01:27.720",
+      "end": "00:01:30.630",
+      "text": "contents of that buffer and that signal and uh uh this means that"
+    },
+    {
+      "start": "00:01:30.630",
+      "end": "00:01:30.640",
+      "text": "signal and uh uh this means that"
+    },
+    {
+      "start": "00:01:30.640",
+      "end": "00:01:33.590",
+      "text": "signal and uh uh this means that multiplying every element of this buffer"
+    },
+    {
+      "start": "00:01:33.590",
+      "end": "00:01:33.600",
+      "text": "multiplying every element of this buffer"
+    },
+    {
+      "start": "00:01:33.600",
+      "end": "00:01:35.990",
+      "text": "multiplying every element of this buffer with the amplitude let's say the"
+    },
+    {
+      "start": "00:01:35.990",
+      "end": "00:01:36.000",
+      "text": "with the amplitude let's say the"
+    },
+    {
+      "start": "00:01:36.000",
+      "end": "00:01:38.590",
+      "text": "with the amplitude let's say the amplitude was one of the signal and"
+    },
+    {
+      "start": "00:01:38.590",
+      "end": "00:01:38.600",
+      "text": "amplitude was one of the signal and"
+    },
+    {
+      "start": "00:01:38.600",
+      "end": "00:01:41.990",
+      "text": "amplitude was one of the signal and summing over all of the elements and so"
+    },
+    {
+      "start": "00:01:41.990",
+      "end": "00:01:42.000",
+      "text": "summing over all of the elements and so"
+    },
+    {
+      "start": "00:01:42.000",
+      "end": "00:01:43.910",
+      "text": "summing over all of the elements and so if we do that then it's a whole bunch of"
+    },
+    {
+      "start": "00:01:43.910",
+      "end": "00:01:43.920",
+      "text": "if we do that then it's a whole bunch of"
+    },
+    {
+      "start": "00:01:43.920",
+      "end": "00:01:47.469",
+      "text": "if we do that then it's a whole bunch of zeros time one then we will be getting a"
+    },
+    {
+      "start": "00:01:47.469",
+      "end": "00:01:47.479",
+      "text": "zeros time one then we will be getting a"
+    },
+    {
+      "start": "00:01:47.479",
+      "end": "00:01:51.749",
+      "text": "zeros time one then we will be getting a result uh that it will uh be zero"
+    },
+    {
+      "start": "00:01:51.749",
+      "end": "00:01:51.759",
+      "text": "result uh that it will uh be zero"
+    },
+    {
+      "start": "00:01:51.759",
+      "end": "00:01:54.910",
+      "text": "result uh that it will uh be zero evidently okay so that is we the zero"
+    },
+    {
+      "start": "00:01:54.910",
+      "end": "00:01:54.920",
+      "text": "evidently okay so that is we the zero"
+    },
+    {
+      "start": "00:01:54.920",
+      "end": "00:01:58.590",
+      "text": "evidently okay so that is we the zero and we'll be getting in fact all zeros"
+    },
+    {
+      "start": "00:01:58.590",
+      "end": "00:01:58.600",
+      "text": "and we'll be getting in fact all zeros"
+    },
+    {
+      "start": "00:01:58.600",
+      "end": "00:02:03.990",
+      "text": "and we'll be getting in fact all zeros results up to the point where we start"
+    },
+    {
+      "start": "00:02:03.990",
+      "end": "00:02:04.000",
+      "text": "results up to the point where we start"
+    },
+    {
+      "start": "00:02:04.000",
+      "end": "00:02:07.910",
+      "text": "results up to the point where we start having uh my my hypo hypothetical kind"
+    },
+    {
+      "start": "00:02:07.910",
+      "end": "00:02:07.920",
+      "text": "having uh my my hypo hypothetical kind"
+    },
+    {
+      "start": "00:02:07.920",
+      "end": "00:02:12.070",
+      "text": "having uh my my hypo hypothetical kind of a signal uh be right at the uh"
+    },
+    {
+      "start": "00:02:12.070",
+      "end": "00:02:12.080",
+      "text": "of a signal uh be right at the uh"
+    },
+    {
+      "start": "00:02:12.080",
+      "end": "00:02:15.710",
+      "text": "of a signal uh be right at the uh location of that uh true location of"
+    },
+    {
+      "start": "00:02:15.710",
+      "end": "00:02:15.720",
+      "text": "location of that uh true location of"
+    },
+    {
+      "start": "00:02:15.720",
+      "end": "00:02:18.509",
+      "text": "location of that uh true location of that kind of signal so uh after this"
+    },
+    {
+      "start": "00:02:18.509",
+      "end": "00:02:18.519",
+      "text": "that kind of signal so uh after this"
+    },
+    {
+      "start": "00:02:18.519",
+      "end": "00:02:20.869",
+      "text": "that kind of signal so uh after this point as you can understand we going to"
+    },
+    {
+      "start": "00:02:20.869",
+      "end": "00:02:20.879",
+      "text": "point as you can understand we going to"
+    },
+    {
+      "start": "00:02:20.879",
+      "end": "00:02:23.750",
+      "text": "point as you can understand we going to have some overlap between this signal"
+    },
+    {
+      "start": "00:02:23.750",
+      "end": "00:02:23.760",
+      "text": "have some overlap between this signal"
+    },
+    {
+      "start": "00:02:23.760",
+      "end": "00:02:27.630",
+      "text": "have some overlap between this signal and this so we be starting getting some"
+    },
+    {
+      "start": "00:02:27.630",
+      "end": "00:02:27.640",
+      "text": "and this so we be starting getting some"
+    },
+    {
+      "start": "00:02:27.640",
+      "end": "00:02:31.350",
+      "text": "and this so we be starting getting some nonzero results out of this of operation"
+    },
+    {
+      "start": "00:02:31.350",
+      "end": "00:02:31.360",
+      "text": "nonzero results out of this of operation"
+    },
+    {
+      "start": "00:02:31.360",
+      "end": "00:02:35.229",
+      "text": "nonzero results out of this of operation and right where exactly the signal is"
+    },
+    {
+      "start": "00:02:35.229",
+      "end": "00:02:35.239",
+      "text": "and right where exactly the signal is"
+    },
+    {
+      "start": "00:02:35.239",
+      "end": "00:02:39.430",
+      "text": "and right where exactly the signal is located right under it uh then we will"
+    },
+    {
+      "start": "00:02:39.430",
+      "end": "00:02:39.440",
+      "text": "located right under it uh then we will"
+    },
+    {
+      "start": "00:02:39.440",
+      "end": "00:02:45.190",
+      "text": "located right under it uh then we will start getting a pick and then evidently"
+    },
+    {
+      "start": "00:02:49.149",
+      "end": "00:02:49.159",
+      "text": "we'll start you know going back to zero"
+    },
+    {
+      "start": "00:02:49.159",
+      "end": "00:02:51.910",
+      "text": "we'll start you know going back to zero and so on and so on so this is basically"
+    },
+    {
+      "start": "00:02:51.910",
+      "end": "00:02:51.920",
+      "text": "and so on and so on so this is basically"
+    },
+    {
+      "start": "00:02:51.920",
+      "end": "00:02:54.430",
+      "text": "and so on and so on so this is basically an approach if we take the AR Marx of"
+    },
+    {
+      "start": "00:02:54.430",
+      "end": "00:02:54.440",
+      "text": "an approach if we take the AR Marx of"
+    },
+    {
+      "start": "00:02:54.440",
+      "end": "00:02:57.030",
+      "text": "an approach if we take the AR Marx of what this kind of operation this will be"
+    },
+    {
+      "start": "00:02:57.030",
+      "end": "00:02:57.040",
+      "text": "what this kind of operation this will be"
+    },
+    {
+      "start": "00:02:57.040",
+      "end": "00:03:01.030",
+      "text": "what this kind of operation this will be let's say the uh uh tow the location"
+    },
+    {
+      "start": "00:03:01.030",
+      "end": "00:03:01.040",
+      "text": "let's say the uh uh tow the location"
+    },
+    {
+      "start": "00:03:01.040",
+      "end": "00:03:04.869",
+      "text": "let's say the uh uh tow the location that sort of indicates the sort of uh"
+    },
+    {
+      "start": "00:03:04.869",
+      "end": "00:03:04.879",
+      "text": "that sort of indicates the sort of uh"
+    },
+    {
+      "start": "00:03:04.879",
+      "end": "00:03:06.990",
+      "text": "that sort of indicates the sort of uh that we have predicted as far as this"
+    },
+    {
+      "start": "00:03:06.990",
+      "end": "00:03:07.000",
+      "text": "that we have predicted as far as this"
+    },
+    {
+      "start": "00:03:07.000",
+      "end": "00:03:09.229",
+      "text": "that we have predicted as far as this kind of signal is"
+    },
+    {
+      "start": "00:03:09.229",
+      "end": "00:03:09.239",
+      "text": "kind of signal is"
+    },
+    {
+      "start": "00:03:09.239",
+      "end": "00:03:12.430",
+      "text": "kind of signal is concerned so what we just did is an"
+    },
+    {
+      "start": "00:03:12.430",
+      "end": "00:03:12.440",
+      "text": "concerned so what we just did is an"
+    },
+    {
+      "start": "00:03:12.440",
+      "end": "00:03:14.309",
+      "text": "concerned so what we just did is an example of what we call a onedimensional"
+    },
+    {
+      "start": "00:03:14.309",
+      "end": "00:03:14.319",
+      "text": "example of what we call a onedimensional"
+    },
+    {
+      "start": "00:03:14.319",
+      "end": "00:03:16.750",
+      "text": "example of what we call a onedimensional correlation operation cross correlation"
+    },
+    {
+      "start": "00:03:16.750",
+      "end": "00:03:16.760",
+      "text": "correlation operation cross correlation"
+    },
+    {
+      "start": "00:03:16.760",
+      "end": "00:03:18.390",
+      "text": "correlation operation cross correlation operation because we are trying to"
+    },
+    {
+      "start": "00:03:18.390",
+      "end": "00:03:18.400",
+      "text": "operation because we are trying to"
+    },
+    {
+      "start": "00:03:18.400",
+      "end": "00:03:22.470",
+      "text": "operation because we are trying to correlate a hypothetical signal um"
+    },
+    {
+      "start": "00:03:22.470",
+      "end": "00:03:22.480",
+      "text": "correlate a hypothetical signal um"
+    },
+    {
+      "start": "00:03:22.480",
+      "end": "00:03:25.830",
+      "text": "correlate a hypothetical signal um located in this hypoth over here against"
+    },
+    {
+      "start": "00:03:25.830",
+      "end": "00:03:25.840",
+      "text": "located in this hypoth over here against"
+    },
+    {
+      "start": "00:03:25.840",
+      "end": "00:03:28.990",
+      "text": "located in this hypoth over here against some other signal the X oft so I will"
+    },
+    {
+      "start": "00:03:28.990",
+      "end": "00:03:29.000",
+      "text": "some other signal the X oft so I will"
+    },
+    {
+      "start": "00:03:29.000",
+      "end": "00:03:31.670",
+      "text": "some other signal the X oft so I will actually call this uh simplistically"
+    },
+    {
+      "start": "00:03:31.670",
+      "end": "00:03:31.680",
+      "text": "actually call this uh simplistically"
+    },
+    {
+      "start": "00:03:31.680",
+      "end": "00:03:34.270",
+      "text": "actually call this uh simplistically let's say y of T I'm actually"
+    },
+    {
+      "start": "00:03:34.270",
+      "end": "00:03:34.280",
+      "text": "let's say y of T I'm actually"
+    },
+    {
+      "start": "00:03:34.280",
+      "end": "00:03:38.030",
+      "text": "let's say y of T I'm actually correlating X of T and Y of T and this"
+    },
+    {
+      "start": "00:03:38.030",
+      "end": "00:03:38.040",
+      "text": "correlating X of T and Y of T and this"
+    },
+    {
+      "start": "00:03:38.040",
+      "end": "00:03:40.869",
+      "text": "correlating X of T and Y of T and this kind of correlation operation is able to"
+    },
+    {
+      "start": "00:03:40.869",
+      "end": "00:03:40.879",
+      "text": "kind of correlation operation is able to"
+    },
+    {
+      "start": "00:03:40.879",
+      "end": "00:03:43.789",
+      "text": "kind of correlation operation is able to retrieve for me in this simple one"
+    },
+    {
+      "start": "00:03:43.789",
+      "end": "00:03:43.799",
+      "text": "retrieve for me in this simple one"
+    },
+    {
+      "start": "00:03:43.799",
+      "end": "00:03:46.470",
+      "text": "retrieve for me in this simple one single dimensional kind of space uh the"
+    },
+    {
+      "start": "00:03:46.470",
+      "end": "00:03:46.480",
+      "text": "single dimensional kind of space uh the"
+    },
+    {
+      "start": "00:03:46.480",
+      "end": "00:03:50.789",
+      "text": "single dimensional kind of space uh the location of X oft uh and this is exactly"
+    },
+    {
+      "start": "00:03:50.789",
+      "end": "00:03:50.799",
+      "text": "location of X oft uh and this is exactly"
+    },
+    {
+      "start": "00:03:50.799",
+      "end": "00:03:54.949",
+      "text": "location of X oft uh and this is exactly what is been uh done uh in a kind of a"
+    },
+    {
+      "start": "00:03:54.949",
+      "end": "00:03:54.959",
+      "text": "what is been uh done uh in a kind of a"
+    },
+    {
+      "start": "00:03:54.959",
+      "end": "00:03:56.990",
+      "text": "what is been uh done uh in a kind of a two-dimensional and three-dimensional"
+    },
+    {
+      "start": "00:03:56.990",
+      "end": "00:03:57.000",
+      "text": "two-dimensional and three-dimensional"
+    },
+    {
+      "start": "00:03:57.000",
+      "end": "00:04:00.069",
+      "text": "two-dimensional and three-dimensional kind of uh space inside the convolution"
+    },
+    {
+      "start": "00:04:00.069",
+      "end": "00:04:00.079",
+      "text": "kind of uh space inside the convolution"
+    },
+    {
+      "start": "00:04:00.079",
+      "end": "00:04:02.069",
+      "text": "kind of uh space inside the convolution kind of neuron Network in fact now what"
+    },
+    {
+      "start": "00:04:02.069",
+      "end": "00:04:02.079",
+      "text": "kind of neuron Network in fact now what"
+    },
+    {
+      "start": "00:04:02.079",
+      "end": "00:04:07.229",
+      "text": "kind of neuron Network in fact now what we will do is we will um expand uh uh"
+    },
+    {
+      "start": "00:04:07.229",
+      "end": "00:04:07.239",
+      "text": "we will do is we will um expand uh uh"
+    },
+    {
+      "start": "00:04:07.239",
+      "end": "00:04:10.630",
+      "text": "we will do is we will um expand uh uh into the another example of where we"
+    },
+    {
+      "start": "00:04:10.630",
+      "end": "00:04:10.640",
+      "text": "into the another example of where we"
+    },
+    {
+      "start": "00:04:10.640",
+      "end": "00:04:14.350",
+      "text": "into the another example of where we have now this uh taxi image and we try"
+    },
+    {
+      "start": "00:04:14.350",
+      "end": "00:04:14.360",
+      "text": "have now this uh taxi image and we try"
+    },
+    {
+      "start": "00:04:14.360",
+      "end": "00:04:16.949",
+      "text": "have now this uh taxi image and we try to understand how we will be able to"
+    },
+    {
+      "start": "00:04:16.949",
+      "end": "00:04:16.959",
+      "text": "to understand how we will be able to"
+    },
+    {
+      "start": "00:04:16.959",
+      "end": "00:04:19.789",
+      "text": "to understand how we will be able to detect the presence of that kind of taxi"
+    },
+    {
+      "start": "00:04:19.789",
+      "end": "00:04:19.799",
+      "text": "detect the presence of that kind of taxi"
+    },
+    {
+      "start": "00:04:19.799",
+      "end": "00:04:22.110",
+      "text": "detect the presence of that kind of taxi in that image but before we go there I"
+    },
+    {
+      "start": "00:04:22.110",
+      "end": "00:04:22.120",
+      "text": "in that image but before we go there I"
+    },
+    {
+      "start": "00:04:22.120",
+      "end": "00:04:25.510",
+      "text": "in that image but before we go there I wanted to actually share with you uh"
+    },
+    {
+      "start": "00:04:25.510",
+      "end": "00:04:25.520",
+      "text": "wanted to actually share with you uh"
+    },
+    {
+      "start": "00:04:25.520",
+      "end": "00:04:27.430",
+      "text": "wanted to actually share with you uh some details in our site where we have"
+    },
+    {
+      "start": "00:04:27.430",
+      "end": "00:04:27.440",
+      "text": "some details in our site where we have"
+    },
+    {
+      "start": "00:04:27.440",
+      "end": "00:04:29.710",
+      "text": "some details in our site where we have if you like an Americal example conf"
+    },
+    {
+      "start": "00:04:29.710",
+      "end": "00:04:29.720",
+      "text": "if you like an Americal example conf"
+    },
+    {
+      "start": "00:04:29.720",
+      "end": "00:04:32.710",
+      "text": "if you like an Americal example conf confusingly uh the true uh sort of"
+    },
+    {
+      "start": "00:04:32.710",
+      "end": "00:04:32.720",
+      "text": "confusingly uh the true uh sort of"
+    },
+    {
+      "start": "00:04:32.720",
+      "end": "00:04:35.070",
+      "text": "confusingly uh the true uh sort of operation of what is actually called"
+    },
+    {
+      "start": "00:04:35.070",
+      "end": "00:04:35.080",
+      "text": "operation of what is actually called"
+    },
+    {
+      "start": "00:04:35.080",
+      "end": "00:04:37.670",
+      "text": "operation of what is actually called convolution is implemented inside the"
+    },
+    {
+      "start": "00:04:37.670",
+      "end": "00:04:37.680",
+      "text": "convolution is implemented inside the"
+    },
+    {
+      "start": "00:04:37.680",
+      "end": "00:04:39.710",
+      "text": "convolution is implemented inside the pytor tensor fls and so on all these"
+    },
+    {
+      "start": "00:04:39.710",
+      "end": "00:04:39.720",
+      "text": "pytor tensor fls and so on all these"
+    },
+    {
+      "start": "00:04:39.720",
+      "end": "00:04:41.909",
+      "text": "pytor tensor fls and so on all these kind of machine learning Frameworks as"
+    },
+    {
+      "start": "00:04:41.909",
+      "end": "00:04:41.919",
+      "text": "kind of machine learning Frameworks as"
+    },
+    {
+      "start": "00:04:41.919",
+      "end": "00:04:44.790",
+      "text": "kind of machine learning Frameworks as correlation operations and uh with the"
+    },
+    {
+      "start": "00:04:44.790",
+      "end": "00:04:44.800",
+      "text": "correlation operations and uh with the"
+    },
+    {
+      "start": "00:04:44.800",
+      "end": "00:04:47.830",
+      "text": "correlation operations and uh with the exception that we actually flip uh the"
+    },
+    {
+      "start": "00:04:47.830",
+      "end": "00:04:47.840",
+      "text": "exception that we actually flip uh the"
+    },
+    {
+      "start": "00:04:47.840",
+      "end": "00:04:51.390",
+      "text": "exception that we actually flip uh the uh in in the time domain that uh uh"
+    },
+    {
+      "start": "00:04:51.390",
+      "end": "00:04:51.400",
+      "text": "uh in in the time domain that uh uh"
+    },
+    {
+      "start": "00:04:51.400",
+      "end": "00:04:55.230",
+      "text": "uh in in the time domain that uh uh signal uh y oft uh we are you know the"
+    },
+    {
+      "start": "00:04:55.230",
+      "end": "00:04:55.240",
+      "text": "signal uh y oft uh we are you know the"
+    },
+    {
+      "start": "00:04:55.240",
+      "end": "00:04:57.430",
+      "text": "signal uh y oft uh we are you know the two operations as it actually clearly"
+    },
+    {
+      "start": "00:04:57.430",
+      "end": "00:04:57.440",
+      "text": "two operations as it actually clearly"
+    },
+    {
+      "start": "00:04:57.440",
+      "end": "00:05:00.310",
+      "text": "two operations as it actually clearly shown uh in your in your s l later on"
+    },
+    {
+      "start": "00:05:00.310",
+      "end": "00:05:00.320",
+      "text": "shown uh in your in your s l later on"
+    },
+    {
+      "start": "00:05:00.320",
+      "end": "00:05:02.230",
+      "text": "shown uh in your in your s l later on the two operations of convolution and"
+    },
+    {
+      "start": "00:05:02.230",
+      "end": "00:05:02.240",
+      "text": "the two operations of convolution and"
+    },
+    {
+      "start": "00:05:02.240",
+      "end": "00:05:05.189",
+      "text": "the two operations of convolution and cor crosscorrelation result"
+    },
+    {
+      "start": "00:05:05.189",
+      "end": "00:05:05.199",
+      "text": "cor crosscorrelation result"
+    },
+    {
+      "start": "00:05:05.199",
+      "end": "00:05:08.590",
+      "text": "cor crosscorrelation result into identical results and for the"
+    },
+    {
+      "start": "00:05:08.590",
+      "end": "00:05:08.600",
+      "text": "into identical results and for the"
+    },
+    {
+      "start": "00:05:08.600",
+      "end": "00:05:11.870",
+      "text": "into identical results and for the purposes of our purposes from a pure"
+    },
+    {
+      "start": "00:05:11.870",
+      "end": "00:05:11.880",
+      "text": "purposes of our purposes from a pure"
+    },
+    {
+      "start": "00:05:11.880",
+      "end": "00:05:14.310",
+      "text": "purposes of our purposes from a pure implementation uh efficiency C"
+    },
+    {
+      "start": "00:05:14.310",
+      "end": "00:05:14.320",
+      "text": "implementation uh efficiency C"
+    },
+    {
+      "start": "00:05:14.320",
+      "end": "00:05:17.510",
+      "text": "implementation uh efficiency C perspective we always prefer to uh refer"
+    },
+    {
+      "start": "00:05:17.510",
+      "end": "00:05:17.520",
+      "text": "perspective we always prefer to uh refer"
+    },
+    {
+      "start": "00:05:17.520",
+      "end": "00:05:19.550",
+      "text": "perspective we always prefer to uh refer to uh to implement them as cross"
+    },
+    {
+      "start": "00:05:19.550",
+      "end": "00:05:19.560",
+      "text": "to uh to implement them as cross"
+    },
+    {
+      "start": "00:05:19.560",
+      "end": "00:05:21.110",
+      "text": "to uh to implement them as cross correlation despite the fact that we are"
+    },
+    {
+      "start": "00:05:21.110",
+      "end": "00:05:21.120",
+      "text": "correlation despite the fact that we are"
+    },
+    {
+      "start": "00:05:21.120",
+      "end": "00:05:23.950",
+      "text": "correlation despite the fact that we are refer to refer to them as convolution"
+    },
+    {
+      "start": "00:05:23.950",
+      "end": "00:05:23.960",
+      "text": "refer to refer to them as convolution"
+    },
+    {
+      "start": "00:05:23.960",
+      "end": "00:05:28.150",
+      "text": "refer to refer to them as convolution operations so let me uh go into um the"
+    },
+    {
+      "start": "00:05:28.150",
+      "end": "00:05:28.160",
+      "text": "operations so let me uh go into um the"
+    },
+    {
+      "start": "00:05:28.160",
+      "end": "00:05:29.909",
+      "text": "operations so let me uh go into um the following kind of discussion now where"
+    },
+    {
+      "start": "00:05:29.909",
+      "end": "00:05:29.919",
+      "text": "following kind of discussion now where"
+    },
+    {
+      "start": "00:05:29.919",
+      "end": "00:05:31.870",
+      "text": "following kind of discussion now where we have uh we are going back to that"
+    },
+    {
+      "start": "00:05:31.870",
+      "end": "00:05:31.880",
+      "text": "we have uh we are going back to that"
+    },
+    {
+      "start": "00:05:31.880",
+      "end": "00:05:35.510",
+      "text": "we have uh we are going back to that kind of a taxi image and let me just uh"
+    },
+    {
+      "start": "00:05:35.510",
+      "end": "00:05:35.520",
+      "text": "kind of a taxi image and let me just uh"
+    },
+    {
+      "start": "00:05:35.520",
+      "end": "00:05:38.430",
+      "text": "kind of a taxi image and let me just uh write over here if I kind of try to"
+    },
+    {
+      "start": "00:05:38.430",
+      "end": "00:05:38.440",
+      "text": "write over here if I kind of try to"
+    },
+    {
+      "start": "00:05:38.440",
+      "end": "00:05:41.590",
+      "text": "write over here if I kind of try to squeeze it so this is our"
+    },
+    {
+      "start": "00:05:41.590",
+      "end": "00:05:41.600",
+      "text": "squeeze it so this is our"
+    },
+    {
+      "start": "00:05:41.600",
+      "end": "00:05:44.629",
+      "text": "squeeze it so this is our image that we have seen earlier with"
+    },
+    {
+      "start": "00:05:44.629",
+      "end": "00:05:44.639",
+      "text": "image that we have seen earlier with"
+    },
+    {
+      "start": "00:05:44.639",
+      "end": "00:05:46.469",
+      "text": "image that we have seen earlier with this Yellow Cab in the"
+    },
+    {
+      "start": "00:05:46.469",
+      "end": "00:05:46.479",
+      "text": "this Yellow Cab in the"
+    },
+    {
+      "start": "00:05:46.479",
+      "end": "00:05:50.309",
+      "text": "this Yellow Cab in the middle and uh here I have uh right in"
+    },
+    {
+      "start": "00:05:50.309",
+      "end": "00:05:50.319",
+      "text": "middle and uh here I have uh right in"
+    },
+    {
+      "start": "00:05:50.319",
+      "end": "00:05:54.309",
+      "text": "middle and uh here I have uh right in the middle a kind of a"
+    },
+    {
+      "start": "00:05:54.309",
+      "end": "00:05:54.319",
+      "text": "the middle a kind of a"
+    },
+    {
+      "start": "00:05:54.319",
+      "end": "00:06:00.390",
+      "text": "the middle a kind of a taxi Okay so"
+    },
+    {
+      "start": "00:06:03.150",
+      "end": "00:06:03.160",
+      "text": "all right and I ask you exactly the same"
+    },
+    {
+      "start": "00:06:03.160",
+      "end": "00:06:05.390",
+      "text": "all right and I ask you exactly the same question uh how we can"
+    },
+    {
+      "start": "00:06:05.390",
+      "end": "00:06:05.400",
+      "text": "question uh how we can"
+    },
+    {
+      "start": "00:06:05.400",
+      "end": "00:06:10.909",
+      "text": "question uh how we can potentially um detect uh this kind of"
+    },
+    {
+      "start": "00:06:10.909",
+      "end": "00:06:10.919",
+      "text": "potentially um detect uh this kind of"
+    },
+    {
+      "start": "00:06:10.919",
+      "end": "00:06:14.309",
+      "text": "potentially um detect uh this kind of Taxi uh in this kind of image okay all"
+    },
+    {
+      "start": "00:06:14.309",
+      "end": "00:06:14.319",
+      "text": "Taxi uh in this kind of image okay all"
+    },
+    {
+      "start": "00:06:14.319",
+      "end": "00:06:20.550",
+      "text": "Taxi uh in this kind of image okay all right uh and maybe the um uh I mean if"
+    },
+    {
+      "start": "00:06:20.550",
+      "end": "00:06:20.560",
+      "text": "right uh and maybe the um uh I mean if"
+    },
+    {
+      "start": "00:06:20.560",
+      "end": "00:06:24.909",
+      "text": "right uh and maybe the um uh I mean if we have known the exact shape of this uh"
+    },
+    {
+      "start": "00:06:24.909",
+      "end": "00:06:24.919",
+      "text": "we have known the exact shape of this uh"
+    },
+    {
+      "start": "00:06:24.919",
+      "end": "00:06:27.909",
+      "text": "we have known the exact shape of this uh uh object um like we have assumed"
+    },
+    {
+      "start": "00:06:27.909",
+      "end": "00:06:27.919",
+      "text": "uh object um like we have assumed"
+    },
+    {
+      "start": "00:06:27.919",
+      "end": "00:06:30.469",
+      "text": "uh object um like we have assumed earlier uh then the operation actually"
+    },
+    {
+      "start": "00:06:30.469",
+      "end": "00:06:30.479",
+      "text": "earlier uh then the operation actually"
+    },
+    {
+      "start": "00:06:30.479",
+      "end": "00:06:32.110",
+      "text": "earlier uh then the operation actually would be uh"
+    },
+    {
+      "start": "00:06:32.110",
+      "end": "00:06:32.120",
+      "text": "would be uh"
+    },
+    {
+      "start": "00:06:32.120",
+      "end": "00:06:34.629",
+      "text": "would be uh straightforward we'll take this uh"
+    },
+    {
+      "start": "00:06:34.629",
+      "end": "00:06:34.639",
+      "text": "straightforward we'll take this uh"
+    },
+    {
+      "start": "00:06:34.639",
+      "end": "00:06:38.909",
+      "text": "straightforward we'll take this uh template again uh we'll call it uh um y"
+    },
+    {
+      "start": "00:06:38.909",
+      "end": "00:06:38.919",
+      "text": "template again uh we'll call it uh um y"
+    },
+    {
+      "start": "00:06:38.919",
+      "end": "00:06:43.110",
+      "text": "template again uh we'll call it uh um y now and we will start sliding uh this"
+    },
+    {
+      "start": "00:06:43.110",
+      "end": "00:06:43.120",
+      "text": "now and we will start sliding uh this"
+    },
+    {
+      "start": "00:06:43.120",
+      "end": "00:06:44.950",
+      "text": "now and we will start sliding uh this kind of template across this kind of"
+    },
+    {
+      "start": "00:06:44.950",
+      "end": "00:06:44.960",
+      "text": "kind of template across this kind of"
+    },
+    {
+      "start": "00:06:44.960",
+      "end": "00:06:47.909",
+      "text": "kind of template across this kind of image to be able to at some point where"
+    },
+    {
+      "start": "00:06:47.909",
+      "end": "00:06:47.919",
+      "text": "image to be able to at some point where"
+    },
+    {
+      "start": "00:06:47.919",
+      "end": "00:06:51.670",
+      "text": "image to be able to at some point where the template is exactly uh present right"
+    },
+    {
+      "start": "00:06:51.670",
+      "end": "00:06:51.680",
+      "text": "the template is exactly uh present right"
+    },
+    {
+      "start": "00:06:51.680",
+      "end": "00:06:54.950",
+      "text": "the template is exactly uh present right on top of that U object in the in the"
+    },
+    {
+      "start": "00:06:54.950",
+      "end": "00:06:54.960",
+      "text": "on top of that U object in the in the"
+    },
+    {
+      "start": "00:06:54.960",
+      "end": "00:06:59.110",
+      "text": "on top of that U object in the in the image X we will then declare that that's"
+    },
+    {
+      "start": "00:06:59.110",
+      "end": "00:06:59.120",
+      "text": "image X we will then declare that that's"
+    },
+    {
+      "start": "00:06:59.120",
+      "end": "00:07:01.869",
+      "text": "image X we will then declare that that's basically the location of that of of"
+    },
+    {
+      "start": "00:07:01.869",
+      "end": "00:07:01.879",
+      "text": "basically the location of that of of"
+    },
+    {
+      "start": "00:07:01.879",
+      "end": "00:07:04.990",
+      "text": "basically the location of that of of that object um the problem however is"
+    },
+    {
+      "start": "00:07:04.990",
+      "end": "00:07:05.000",
+      "text": "that object um the problem however is"
+    },
+    {
+      "start": "00:07:05.000",
+      "end": "00:07:07.749",
+      "text": "that object um the problem however is that in in this kind of approach we have"
+    },
+    {
+      "start": "00:07:07.749",
+      "end": "00:07:07.759",
+      "text": "that in in this kind of approach we have"
+    },
+    {
+      "start": "00:07:07.759",
+      "end": "00:07:10.710",
+      "text": "that in in this kind of approach we have first assume that we will know exactly"
+    },
+    {
+      "start": "00:07:10.710",
+      "end": "00:07:10.720",
+      "text": "first assume that we will know exactly"
+    },
+    {
+      "start": "00:07:10.720",
+      "end": "00:07:13.710",
+      "text": "first assume that we will know exactly the shape of that uh object which is not"
+    },
+    {
+      "start": "00:07:13.710",
+      "end": "00:07:13.720",
+      "text": "the shape of that uh object which is not"
+    },
+    {
+      "start": "00:07:13.720",
+      "end": "00:07:17.390",
+      "text": "the shape of that uh object which is not realistic because uh the object is uh"
+    },
+    {
+      "start": "00:07:17.390",
+      "end": "00:07:17.400",
+      "text": "realistic because uh the object is uh"
+    },
+    {
+      "start": "00:07:17.400",
+      "end": "00:07:20.629",
+      "text": "realistic because uh the object is uh definitely going to uh vary uh quite a"
+    },
+    {
+      "start": "00:07:20.629",
+      "end": "00:07:20.639",
+      "text": "definitely going to uh vary uh quite a"
+    },
+    {
+      "start": "00:07:20.639",
+      "end": "00:07:23.150",
+      "text": "definitely going to uh vary uh quite a lot let's say the object may be rotated"
+    },
+    {
+      "start": "00:07:23.150",
+      "end": "00:07:23.160",
+      "text": "lot let's say the object may be rotated"
+    },
+    {
+      "start": "00:07:23.160",
+      "end": "00:07:28.230",
+      "text": "lot let's say the object may be rotated translated in um uh sort of uh or or uh"
+    },
+    {
+      "start": "00:07:28.230",
+      "end": "00:07:28.240",
+      "text": "translated in um uh sort of uh or or uh"
+    },
+    {
+      "start": "00:07:28.240",
+      "end": "00:07:30.270",
+      "text": "translated in um uh sort of uh or or uh being uh sort of uh because of the"
+    },
+    {
+      "start": "00:07:30.270",
+      "end": "00:07:30.280",
+      "text": "being uh sort of uh because of the"
+    },
+    {
+      "start": "00:07:30.280",
+      "end": "00:07:33.070",
+      "text": "being uh sort of uh because of the lighting condition maybe not sort of"
+    },
+    {
+      "start": "00:07:33.070",
+      "end": "00:07:33.080",
+      "text": "lighting condition maybe not sort of"
+    },
+    {
+      "start": "00:07:33.080",
+      "end": "00:07:35.990",
+      "text": "lighting condition maybe not sort of very evident it's exact shape it's"
+    },
+    {
+      "start": "00:07:35.990",
+      "end": "00:07:36.000",
+      "text": "very evident it's exact shape it's"
+    },
+    {
+      "start": "00:07:36.000",
+      "end": "00:07:38.869",
+      "text": "very evident it's exact shape it's shadowed for example or uded by other"
+    },
+    {
+      "start": "00:07:38.869",
+      "end": "00:07:38.879",
+      "text": "shadowed for example or uded by other"
+    },
+    {
+      "start": "00:07:38.879",
+      "end": "00:07:42.070",
+      "text": "shadowed for example or uded by other objects and the other um uh assumption"
+    },
+    {
+      "start": "00:07:42.070",
+      "end": "00:07:42.080",
+      "text": "objects and the other um uh assumption"
+    },
+    {
+      "start": "00:07:42.080",
+      "end": "00:07:44.149",
+      "text": "objects and the other um uh assumption is that in terms of computational"
+    },
+    {
+      "start": "00:07:44.149",
+      "end": "00:07:44.159",
+      "text": "is that in terms of computational"
+    },
+    {
+      "start": "00:07:44.159",
+      "end": "00:07:47.430",
+      "text": "is that in terms of computational efficiency uh the larger our kind of"
+    },
+    {
+      "start": "00:07:47.430",
+      "end": "00:07:47.440",
+      "text": "efficiency uh the larger our kind of"
+    },
+    {
+      "start": "00:07:47.440",
+      "end": "00:07:49.430",
+      "text": "efficiency uh the larger our kind of prototype is in terms of number of"
+    },
+    {
+      "start": "00:07:49.430",
+      "end": "00:07:49.440",
+      "text": "prototype is in terms of number of"
+    },
+    {
+      "start": "00:07:49.440",
+      "end": "00:07:51.230",
+      "text": "prototype is in terms of number of pixels the more expensive this kind of"
+    },
+    {
+      "start": "00:07:51.230",
+      "end": "00:07:51.240",
+      "text": "pixels the more expensive this kind of"
+    },
+    {
+      "start": "00:07:51.240",
+      "end": "00:07:53.869",
+      "text": "pixels the more expensive this kind of operation becomes so in order to solve"
+    },
+    {
+      "start": "00:07:53.869",
+      "end": "00:07:53.879",
+      "text": "operation becomes so in order to solve"
+    },
+    {
+      "start": "00:07:53.879",
+      "end": "00:07:57.149",
+      "text": "operation becomes so in order to solve these two problems uh what we will do uh"
+    },
+    {
+      "start": "00:07:57.149",
+      "end": "00:07:57.159",
+      "text": "these two problems uh what we will do uh"
+    },
+    {
+      "start": "00:07:57.159",
+      "end": "00:08:00.510",
+      "text": "these two problems uh what we will do uh what we would suggest is uh we will not"
+    },
+    {
+      "start": "00:08:00.510",
+      "end": "00:08:00.520",
+      "text": "what we would suggest is uh we will not"
+    },
+    {
+      "start": "00:08:00.520",
+      "end": "00:08:03.309",
+      "text": "what we would suggest is uh we will not abandon this kind of sliding operation"
+    },
+    {
+      "start": "00:08:03.309",
+      "end": "00:08:03.319",
+      "text": "abandon this kind of sliding operation"
+    },
+    {
+      "start": "00:08:03.319",
+      "end": "00:08:05.710",
+      "text": "abandon this kind of sliding operation um that we will called cross correlation"
+    },
+    {
+      "start": "00:08:05.710",
+      "end": "00:08:05.720",
+      "text": "um that we will called cross correlation"
+    },
+    {
+      "start": "00:08:05.720",
+      "end": "00:08:08.189",
+      "text": "um that we will called cross correlation a bit earlier but if in fact what we"
+    },
+    {
+      "start": "00:08:08.189",
+      "end": "00:08:08.199",
+      "text": "a bit earlier but if in fact what we"
+    },
+    {
+      "start": "00:08:08.199",
+      "end": "00:08:10.629",
+      "text": "a bit earlier but if in fact what we will actually do now is we'll use a much"
+    },
+    {
+      "start": "00:08:10.629",
+      "end": "00:08:10.639",
+      "text": "will actually do now is we'll use a much"
+    },
+    {
+      "start": "00:08:10.639",
+      "end": "00:08:15.550",
+      "text": "will actually do now is we'll use a much smaller prototype and we are now pH the"
+    },
+    {
+      "start": "00:08:15.550",
+      "end": "00:08:15.560",
+      "text": "smaller prototype and we are now pH the"
+    },
+    {
+      "start": "00:08:15.560",
+      "end": "00:08:17.230",
+      "text": "smaller prototype and we are now pH the problem as to what is really the"
+    },
+    {
+      "start": "00:08:17.230",
+      "end": "00:08:17.240",
+      "text": "problem as to what is really the"
+    },
+    {
+      "start": "00:08:17.240",
+      "end": "00:08:19.430",
+      "text": "problem as to what is really the contents of that uh sort of prototype"
+    },
+    {
+      "start": "00:08:19.430",
+      "end": "00:08:19.440",
+      "text": "contents of that uh sort of prototype"
+    },
+    {
+      "start": "00:08:19.440",
+      "end": "00:08:21.589",
+      "text": "contents of that uh sort of prototype that we will be uh calling from now on a"
+    },
+    {
+      "start": "00:08:21.589",
+      "end": "00:08:21.599",
+      "text": "that we will be uh calling from now on a"
+    },
+    {
+      "start": "00:08:21.599",
+      "end": "00:08:24.469",
+      "text": "that we will be uh calling from now on a kernel so let me just draw the kernel"
+    },
+    {
+      "start": "00:08:24.469",
+      "end": "00:08:24.479",
+      "text": "kernel so let me just draw the kernel"
+    },
+    {
+      "start": "00:08:24.479",
+      "end": "00:08:27.390",
+      "text": "kernel so let me just draw the kernel over here and maybe I can start"
+    },
+    {
+      "start": "00:08:27.390",
+      "end": "00:08:27.400",
+      "text": "over here and maybe I can start"
+    },
+    {
+      "start": "00:08:27.400",
+      "end": "00:08:29.149",
+      "text": "over here and maybe I can start answering the question as to what should"
+    },
+    {
+      "start": "00:08:29.149",
+      "end": "00:08:29.159",
+      "text": "answering the question as to what should"
+    },
+    {
+      "start": "00:08:29.159",
+      "end": "00:08:31.670",
+      "text": "answering the question as to what should be the the contents of this kernel that"
+    },
+    {
+      "start": "00:08:31.670",
+      "end": "00:08:31.680",
+      "text": "be the the contents of this kernel that"
+    },
+    {
+      "start": "00:08:31.680",
+      "end": "00:08:35.190",
+      "text": "be the the contents of this kernel that will be able to uh detect this um um cab"
+    },
+    {
+      "start": "00:08:35.190",
+      "end": "00:08:35.200",
+      "text": "will be able to uh detect this um um cab"
+    },
+    {
+      "start": "00:08:35.200",
+      "end": "00:08:38.430",
+      "text": "will be able to uh detect this um um cab over here all right so uh this image is"
+    },
+    {
+      "start": "00:08:38.430",
+      "end": "00:08:38.440",
+      "text": "over here all right so uh this image is"
+    },
+    {
+      "start": "00:08:38.440",
+      "end": "00:08:41.550",
+      "text": "over here all right so uh this image is extremely simple in fact it has uh zeros"
+    },
+    {
+      "start": "00:08:41.550",
+      "end": "00:08:41.560",
+      "text": "extremely simple in fact it has uh zeros"
+    },
+    {
+      "start": "00:08:41.560",
+      "end": "00:08:45.910",
+      "text": "extremely simple in fact it has uh zeros in uh these pixels and um all the other"
+    },
+    {
+      "start": "00:08:45.910",
+      "end": "00:08:45.920",
+      "text": "in uh these pixels and um all the other"
+    },
+    {
+      "start": "00:08:45.920",
+      "end": "00:08:47.670",
+      "text": "in uh these pixels and um all the other pixels which we have not drawn anything"
+    },
+    {
+      "start": "00:08:47.670",
+      "end": "00:08:47.680",
+      "text": "pixels which we have not drawn anything"
+    },
+    {
+      "start": "00:08:47.680",
+      "end": "00:08:52.110",
+      "text": "pixels which we have not drawn anything are 255 so 255 corresponds to Pure White"
+    },
+    {
+      "start": "00:08:52.110",
+      "end": "00:08:52.120",
+      "text": "are 255 so 255 corresponds to Pure White"
+    },
+    {
+      "start": "00:08:52.120",
+      "end": "00:08:54.470",
+      "text": "are 255 so 255 corresponds to Pure White and zero corresponds to Black so since I"
+    },
+    {
+      "start": "00:08:54.470",
+      "end": "00:08:54.480",
+      "text": "and zero corresponds to Black so since I"
+    },
+    {
+      "start": "00:08:54.480",
+      "end": "00:08:58.230",
+      "text": "and zero corresponds to Black so since I have a black and white image I can um"
+    },
+    {
+      "start": "00:08:58.230",
+      "end": "00:08:58.240",
+      "text": "have a black and white image I can um"
+    },
+    {
+      "start": "00:08:58.240",
+      "end": "00:09:02.670",
+      "text": "have a black and white image I can um suggest that uh maybe uh if I can"
+    },
+    {
+      "start": "00:09:02.670",
+      "end": "00:09:02.680",
+      "text": "suggest that uh maybe uh if I can"
+    },
+    {
+      "start": "00:09:02.680",
+      "end": "00:09:07.350",
+      "text": "suggest that uh maybe uh if I can U uh have a Kel"
+    },
+    {
+      "start": "00:09:07.350",
+      "end": "00:09:07.360",
+      "text": "U uh have a Kel"
+    },
+    {
+      "start": "00:09:07.360",
+      "end": "00:09:09.110",
+      "text": "U uh have a Kel who's uh"
+    },
+    {
+      "start": "00:09:09.110",
+      "end": "00:09:09.120",
+      "text": "who's uh"
+    },
+    {
+      "start": "00:09:09.120",
+      "end": "00:09:12.550",
+      "text": "who's uh pixels so this is a kernel which is the"
+    },
+    {
+      "start": "00:09:12.550",
+      "end": "00:09:12.560",
+      "text": "pixels so this is a kernel which is the"
+    },
+    {
+      "start": "00:09:12.560",
+      "end": "00:09:14.150",
+      "text": "pixels so this is a kernel which is the size of that is not necessarily"
+    },
+    {
+      "start": "00:09:14.150",
+      "end": "00:09:14.160",
+      "text": "size of that is not necessarily"
+    },
+    {
+      "start": "00:09:14.160",
+      "end": "00:09:17.870",
+      "text": "size of that is not necessarily accidental it's uh 3x3 in this"
+    },
+    {
+      "start": "00:09:17.870",
+      "end": "00:09:17.880",
+      "text": "accidental it's uh 3x3 in this"
+    },
+    {
+      "start": "00:09:17.880",
+      "end": "00:09:22.509",
+      "text": "accidental it's uh 3x3 in this case uh and if I um Locate over here in"
+    },
+    {
+      "start": "00:09:22.509",
+      "end": "00:09:22.519",
+      "text": "case uh and if I um Locate over here in"
+    },
+    {
+      "start": "00:09:22.519",
+      "end": "00:09:24.670",
+      "text": "case uh and if I um Locate over here in this pixels I made them let's say zeros"
+    },
+    {
+      "start": "00:09:24.670",
+      "end": "00:09:24.680",
+      "text": "this pixels I made them let's say zeros"
+    },
+    {
+      "start": "00:09:24.680",
+      "end": "00:09:27.430",
+      "text": "this pixels I made them let's say zeros and over here I made them 255 then you"
+    },
+    {
+      "start": "00:09:27.430",
+      "end": "00:09:27.440",
+      "text": "and over here I made them 255 then you"
+    },
+    {
+      "start": "00:09:27.440",
+      "end": "00:09:29.110",
+      "text": "and over here I made them 255 then you can all understand that as I'm sliding"
+    },
+    {
+      "start": "00:09:29.110",
+      "end": "00:09:29.120",
+      "text": "can all understand that as I'm sliding"
+    },
+    {
+      "start": "00:09:29.120",
+      "end": "00:09:31.870",
+      "text": "can all understand that as I'm sliding around this kind of Kernel I will"
+    },
+    {
+      "start": "00:09:31.870",
+      "end": "00:09:31.880",
+      "text": "around this kind of Kernel I will"
+    },
+    {
+      "start": "00:09:31.880",
+      "end": "00:09:35.110",
+      "text": "around this kind of Kernel I will definitely go and at some point hit this"
+    },
+    {
+      "start": "00:09:35.110",
+      "end": "00:09:35.120",
+      "text": "definitely go and at some point hit this"
+    },
+    {
+      "start": "00:09:35.120",
+      "end": "00:09:39.150",
+      "text": "definitely go and at some point hit this location over"
+    },
+    {
+      "start": "00:09:42.710",
+      "end": "00:09:42.720",
+      "text": "here with this kernel and at that moment"
+    },
+    {
+      "start": "00:09:42.720",
+      "end": "00:09:45.990",
+      "text": "here with this kernel and at that moment in that location then I will be getting"
+    },
+    {
+      "start": "00:09:45.990",
+      "end": "00:09:46.000",
+      "text": "in that location then I will be getting"
+    },
+    {
+      "start": "00:09:46.000",
+      "end": "00:09:47.910",
+      "text": "in that location then I will be getting some uh uh"
+    },
+    {
+      "start": "00:09:47.910",
+      "end": "00:09:47.920",
+      "text": "some uh uh"
+    },
+    {
+      "start": "00:09:47.920",
+      "end": "00:09:52.350",
+      "text": "some uh uh definitely uh significant uh Peak if I"
+    },
+    {
+      "start": "00:09:52.350",
+      "end": "00:09:52.360",
+      "text": "definitely uh significant uh Peak if I"
+    },
+    {
+      "start": "00:09:52.360",
+      "end": "00:09:53.949",
+      "text": "definitely uh significant uh Peak if I may call it like that out of my"
+    },
+    {
+      "start": "00:09:53.949",
+      "end": "00:09:53.959",
+      "text": "may call it like that out of my"
+    },
+    {
+      "start": "00:09:53.959",
+      "end": "00:09:55.750",
+      "text": "may call it like that out of my crosscorrelation operation so we'll see"
+    },
+    {
+      "start": "00:09:55.750",
+      "end": "00:09:55.760",
+      "text": "crosscorrelation operation so we'll see"
+    },
+    {
+      "start": "00:09:55.760",
+      "end": "00:09:57.310",
+      "text": "crosscorrelation operation so we'll see the details the mathematical details of"
+    },
+    {
+      "start": "00:09:57.310",
+      "end": "00:09:57.320",
+      "text": "the details the mathematical details of"
+    },
+    {
+      "start": "00:09:57.320",
+      "end": "00:10:00.389",
+      "text": "the details the mathematical details of that cross correlation operation shortly"
+    },
+    {
+      "start": "00:10:00.389",
+      "end": "00:10:00.399",
+      "text": "that cross correlation operation shortly"
+    },
+    {
+      "start": "00:10:00.399",
+      "end": "00:10:02.550",
+      "text": "that cross correlation operation shortly but that's basically what is um is going"
+    },
+    {
+      "start": "00:10:02.550",
+      "end": "00:10:02.560",
+      "text": "but that's basically what is um is going"
+    },
+    {
+      "start": "00:10:02.560",
+      "end": "00:10:06.069",
+      "text": "but that's basically what is um is going to happen then and so exactly the same"
+    },
+    {
+      "start": "00:10:06.069",
+      "end": "00:10:06.079",
+      "text": "to happen then and so exactly the same"
+    },
+    {
+      "start": "00:10:06.079",
+      "end": "00:10:07.750",
+      "text": "to happen then and so exactly the same thing will actually happen in this"
+    },
+    {
+      "start": "00:10:07.750",
+      "end": "00:10:07.760",
+      "text": "thing will actually happen in this"
+    },
+    {
+      "start": "00:10:07.760",
+      "end": "00:10:10.470",
+      "text": "thing will actually happen in this location and potentially in this type of"
+    },
+    {
+      "start": "00:10:10.470",
+      "end": "00:10:10.480",
+      "text": "location and potentially in this type of"
+    },
+    {
+      "start": "00:10:10.480",
+      "end": "00:10:13.790",
+      "text": "location and potentially in this type of locations and so on uh but I don't think"
+    },
+    {
+      "start": "00:10:13.790",
+      "end": "00:10:13.800",
+      "text": "locations and so on uh but I don't think"
+    },
+    {
+      "start": "00:10:13.800",
+      "end": "00:10:16.630",
+      "text": "locations and so on uh but I don't think that we have the complete story yet"
+    },
+    {
+      "start": "00:10:16.630",
+      "end": "00:10:16.640",
+      "text": "that we have the complete story yet"
+    },
+    {
+      "start": "00:10:16.640",
+      "end": "00:10:19.150",
+      "text": "that we have the complete story yet because um I can suggest an additional"
+    },
+    {
+      "start": "00:10:19.150",
+      "end": "00:10:19.160",
+      "text": "because um I can suggest an additional"
+    },
+    {
+      "start": "00:10:19.160",
+      "end": "00:10:21.990",
+      "text": "because um I can suggest an additional kind of"
+    },
+    {
+      "start": "00:10:24.350",
+      "end": "00:10:24.360",
+      "text": "Kernel again it will be"
+    },
+    {
+      "start": "00:10:24.360",
+      "end": "00:10:27.470",
+      "text": "Kernel again it will be 3x3 and this kernel if it is"
+    },
+    {
+      "start": "00:10:27.470",
+      "end": "00:10:27.480",
+      "text": "3x3 and this kernel if it is"
+    },
+    {
+      "start": "00:10:27.480",
+      "end": "00:10:30.470",
+      "text": "3x3 and this kernel if it is uh uh sort of"
+    },
+    {
+      "start": "00:10:30.470",
+      "end": "00:10:30.480",
+      "text": "uh uh sort of"
+    },
+    {
+      "start": "00:10:30.480",
+      "end": "00:10:35.310",
+      "text": "uh uh sort of uh programmed to contain this type of um"
+    },
+    {
+      "start": "00:10:35.310",
+      "end": "00:10:35.320",
+      "text": "uh programmed to contain this type of um"
+    },
+    {
+      "start": "00:10:35.320",
+      "end": "00:10:39.389",
+      "text": "uh programmed to contain this type of um information um where now the black uh"
+    },
+    {
+      "start": "00:10:39.389",
+      "end": "00:10:39.399",
+      "text": "information um where now the black uh"
+    },
+    {
+      "start": "00:10:39.399",
+      "end": "00:10:41.790",
+      "text": "information um where now the black uh pixels are like this and the whites are"
+    },
+    {
+      "start": "00:10:41.790",
+      "end": "00:10:41.800",
+      "text": "pixels are like this and the whites are"
+    },
+    {
+      "start": "00:10:41.800",
+      "end": "00:10:44.389",
+      "text": "pixels are like this and the whites are over there they're kind of a diagonally"
+    },
+    {
+      "start": "00:10:44.389",
+      "end": "00:10:44.399",
+      "text": "over there they're kind of a diagonally"
+    },
+    {
+      "start": "00:10:44.399",
+      "end": "00:10:46.310",
+      "text": "over there they're kind of a diagonally uh then we will be able to pick up"
+    },
+    {
+      "start": "00:10:46.310",
+      "end": "00:10:46.320",
+      "text": "uh then we will be able to pick up"
+    },
+    {
+      "start": "00:10:46.320",
+      "end": "00:10:50.230",
+      "text": "uh then we will be able to pick up probably this feature over here where"
+    },
+    {
+      "start": "00:10:50.230",
+      "end": "00:10:50.240",
+      "text": "probably this feature over here where"
+    },
+    {
+      "start": "00:10:50.240",
+      "end": "00:10:54.030",
+      "text": "probably this feature over here where the wind screen is uh and so on and so"
+    },
+    {
+      "start": "00:10:54.030",
+      "end": "00:10:54.040",
+      "text": "the wind screen is uh and so on and so"
+    },
+    {
+      "start": "00:10:54.040",
+      "end": "00:10:56.230",
+      "text": "the wind screen is uh and so on and so on so we can actually"
+    },
+    {
+      "start": "00:10:56.230",
+      "end": "00:10:56.240",
+      "text": "on so we can actually"
+    },
+    {
+      "start": "00:10:56.240",
+      "end": "00:10:59.990",
+      "text": "on so we can actually uh suggest other kernels as well where"
+    },
+    {
+      "start": "00:10:59.990",
+      "end": "00:11:00.000",
+      "text": "uh suggest other kernels as well where"
+    },
+    {
+      "start": "00:11:00.000",
+      "end": "00:11:03.710",
+      "text": "uh suggest other kernels as well where we now have the uh other"
+    },
+    {
+      "start": "00:11:03.710",
+      "end": "00:11:03.720",
+      "text": "we now have the uh other"
+    },
+    {
+      "start": "00:11:03.720",
+      "end": "00:11:06.870",
+      "text": "we now have the uh other diagonal uh these wheels can be detected"
+    },
+    {
+      "start": "00:11:06.870",
+      "end": "00:11:06.880",
+      "text": "diagonal uh these wheels can be detected"
+    },
+    {
+      "start": "00:11:06.880",
+      "end": "00:11:10.629",
+      "text": "diagonal uh these wheels can be detected by having uh some something else um some"
+    },
+    {
+      "start": "00:11:10.629",
+      "end": "00:11:10.639",
+      "text": "by having uh some something else um some"
+    },
+    {
+      "start": "00:11:10.639",
+      "end": "00:11:14.030",
+      "text": "by having uh some something else um some other kind of"
+    },
+    {
+      "start": "00:11:17.470",
+      "end": "00:11:17.480",
+      "text": "Kernel where maybe these guys will be uh"
+    },
+    {
+      "start": "00:11:17.480",
+      "end": "00:11:20.910",
+      "text": "Kernel where maybe these guys will be uh need to be uh sort of colored like this"
+    },
+    {
+      "start": "00:11:20.910",
+      "end": "00:11:20.920",
+      "text": "need to be uh sort of colored like this"
+    },
+    {
+      "start": "00:11:20.920",
+      "end": "00:11:23.310",
+      "text": "need to be uh sort of colored like this colored in quotes or program like this"
+    },
+    {
+      "start": "00:11:23.310",
+      "end": "00:11:23.320",
+      "text": "colored in quotes or program like this"
+    },
+    {
+      "start": "00:11:23.320",
+      "end": "00:11:27.230",
+      "text": "colored in quotes or program like this with 255 and zeros uh and as you can"
+    },
+    {
+      "start": "00:11:27.230",
+      "end": "00:11:27.240",
+      "text": "with 255 and zeros uh and as you can"
+    },
+    {
+      "start": "00:11:27.240",
+      "end": "00:11:30.190",
+      "text": "with 255 and zeros uh and as you can understand all of these uh kernels if"
+    },
+    {
+      "start": "00:11:30.190",
+      "end": "00:11:30.200",
+      "text": "understand all of these uh kernels if"
+    },
+    {
+      "start": "00:11:30.200",
+      "end": "00:11:34.590",
+      "text": "understand all of these uh kernels if they are uh positioned at some point in"
+    },
+    {
+      "start": "00:11:34.590",
+      "end": "00:11:34.600",
+      "text": "they are uh positioned at some point in"
+    },
+    {
+      "start": "00:11:34.600",
+      "end": "00:11:37.110",
+      "text": "they are uh positioned at some point in in this kind of image and I'll be"
+    },
+    {
+      "start": "00:11:37.110",
+      "end": "00:11:37.120",
+      "text": "in this kind of image and I'll be"
+    },
+    {
+      "start": "00:11:37.120",
+      "end": "00:11:39.150",
+      "text": "in this kind of image and I'll be calling now from now on"
+    },
+    {
+      "start": "00:11:39.150",
+      "end": "00:11:39.160",
+      "text": "calling now from now on"
+    },
+    {
+      "start": "00:11:39.160",
+      "end": "00:11:44.430",
+      "text": "calling now from now on this aggregation of kernels as a"
+    },
+    {
+      "start": "00:11:48.030",
+      "end": "00:11:48.040",
+      "text": "filter so filter for me will be this"
+    },
+    {
+      "start": "00:11:48.040",
+      "end": "00:11:51.069",
+      "text": "filter so filter for me will be this kind of a three-dimensional"
+    },
+    {
+      "start": "00:11:51.069",
+      "end": "00:11:51.079",
+      "text": "kind of a three-dimensional"
+    },
+    {
+      "start": "00:11:51.079",
+      "end": "00:11:55.310",
+      "text": "kind of a three-dimensional structure that it will uh"
+    },
+    {
+      "start": "00:11:55.310",
+      "end": "00:11:55.320",
+      "text": "structure that it will uh"
+    },
+    {
+      "start": "00:11:55.320",
+      "end": "00:12:00.069",
+      "text": "structure that it will uh have 3x3 let's say spatial coordinates"
+    },
+    {
+      "start": "00:12:00.069",
+      "end": "00:12:00.079",
+      "text": "have 3x3 let's say spatial coordinates"
+    },
+    {
+      "start": "00:12:00.079",
+      "end": "00:12:02.310",
+      "text": "have 3x3 let's say spatial coordinates so this is the"
+    },
+    {
+      "start": "00:12:02.310",
+      "end": "00:12:02.320",
+      "text": "so this is the"
+    },
+    {
+      "start": "00:12:02.320",
+      "end": "00:12:05.509",
+      "text": "so this is the 3X3"
+    },
+    {
+      "start": "00:12:12.389",
+      "end": "00:12:12.399",
+      "text": "extent and it would have some kind of a"
+    },
+    {
+      "start": "00:12:12.399",
+      "end": "00:12:17.710",
+      "text": "extent and it would have some kind of a depth D and this uh depth let's write"
+    },
+    {
+      "start": "00:12:17.710",
+      "end": "00:12:17.720",
+      "text": "depth D and this uh depth let's write"
+    },
+    {
+      "start": "00:12:17.720",
+      "end": "00:12:20.990",
+      "text": "depth D and this uh depth let's write depth is of course uh the number of Kels"
+    },
+    {
+      "start": "00:12:20.990",
+      "end": "00:12:21.000",
+      "text": "depth is of course uh the number of Kels"
+    },
+    {
+      "start": "00:12:21.000",
+      "end": "00:12:24.230",
+      "text": "depth is of course uh the number of Kels that I employ in this filter okay so"
+    },
+    {
+      "start": "00:12:24.230",
+      "end": "00:12:24.240",
+      "text": "that I employ in this filter okay so"
+    },
+    {
+      "start": "00:12:24.240",
+      "end": "00:12:27.550",
+      "text": "that I employ in this filter okay so over here that that is basically um a a"
+    },
+    {
+      "start": "00:12:27.550",
+      "end": "00:12:27.560",
+      "text": "over here that that is basically um a a"
+    },
+    {
+      "start": "00:12:27.560",
+      "end": "00:12:30.310",
+      "text": "over here that that is basically um a a structure that I will see will be a"
+    },
+    {
+      "start": "00:12:30.310",
+      "end": "00:12:30.320",
+      "text": "structure that I will see will be a"
+    },
+    {
+      "start": "00:12:30.320",
+      "end": "00:12:33.590",
+      "text": "structure that I will see will be a fairly I call it useful for me to be"
+    },
+    {
+      "start": "00:12:33.590",
+      "end": "00:12:33.600",
+      "text": "fairly I call it useful for me to be"
+    },
+    {
+      "start": "00:12:33.600",
+      "end": "00:12:37.030",
+      "text": "fairly I call it useful for me to be able to detect now um pixels uh sorry"
+    },
+    {
+      "start": "00:12:37.030",
+      "end": "00:12:37.040",
+      "text": "able to detect now um pixels uh sorry"
+    },
+    {
+      "start": "00:12:37.040",
+      "end": "00:12:40.350",
+      "text": "able to detect now um pixels uh sorry features uh from images okay and now"
+    },
+    {
+      "start": "00:12:40.350",
+      "end": "00:12:40.360",
+      "text": "features uh from images okay and now"
+    },
+    {
+      "start": "00:12:40.360",
+      "end": "00:12:41.829",
+      "text": "features uh from images okay and now let's uh see the"
+    },
+    {
+      "start": "00:12:41.829",
+      "end": "00:12:41.839",
+      "text": "let's uh see the"
+    },
+    {
+      "start": "00:12:41.839",
+      "end": "00:12:45.269",
+      "text": "let's uh see the mathematical um description of what we"
+    },
+    {
+      "start": "00:12:45.269",
+      "end": "00:12:45.279",
+      "text": "mathematical um description of what we"
+    },
+    {
+      "start": "00:12:45.279",
+      "end": "00:12:46.750",
+      "text": "mathematical um description of what we have just"
+    },
+    {
+      "start": "00:12:46.750",
+      "end": "00:12:46.760",
+      "text": "have just"
+    },
+    {
+      "start": "00:12:46.760",
+      "end": "00:12:49.790",
+      "text": "have just described um let me go back to the"
+    },
+    {
+      "start": "00:12:49.790",
+      "end": "00:12:49.800",
+      "text": "described um let me go back to the"
+    },
+    {
+      "start": "00:12:49.800",
+      "end": "00:12:53.430",
+      "text": "described um let me go back to the site and in that site we have the"
+    },
+    {
+      "start": "00:12:53.430",
+      "end": "00:12:53.440",
+      "text": "site and in that site we have the"
+    },
+    {
+      "start": "00:12:53.440",
+      "end": "00:12:55.710",
+      "text": "site and in that site we have the so-called two-dimensional the extension"
+    },
+    {
+      "start": "00:12:55.710",
+      "end": "00:12:55.720",
+      "text": "so-called two-dimensional the extension"
+    },
+    {
+      "start": "00:12:55.720",
+      "end": "00:12:57.069",
+      "text": "so-called two-dimensional the extension of the so-called two- dimensional"
+    },
+    {
+      "start": "00:12:57.069",
+      "end": "00:12:57.079",
+      "text": "of the so-called two- dimensional"
+    },
+    {
+      "start": "00:12:57.079",
+      "end": "00:12:59.750",
+      "text": "of the so-called two- dimensional crosscorrelation operation and it's ex"
+    },
+    {
+      "start": "00:12:59.750",
+      "end": "00:12:59.760",
+      "text": "crosscorrelation operation and it's ex"
+    },
+    {
+      "start": "00:12:59.760",
+      "end": "00:13:01.470",
+      "text": "crosscorrelation operation and it's ex actually shown here in this kind of"
+    },
+    {
+      "start": "00:13:01.470",
+      "end": "00:13:01.480",
+      "text": "actually shown here in this kind of"
+    },
+    {
+      "start": "00:13:01.480",
+      "end": "00:13:05.550",
+      "text": "actually shown here in this kind of image uh this in this picture so we have"
+    },
+    {
+      "start": "00:13:05.550",
+      "end": "00:13:05.560",
+      "text": "image uh this in this picture so we have"
+    },
+    {
+      "start": "00:13:05.560",
+      "end": "00:13:09.389",
+      "text": "image uh this in this picture so we have an input image of uh uh"
+    },
+    {
+      "start": "00:13:09.389",
+      "end": "00:13:09.399",
+      "text": "an input image of uh uh"
+    },
+    {
+      "start": "00:13:09.399",
+      "end": "00:13:11.030",
+      "text": "an input image of uh uh 3x4"
+    },
+    {
+      "start": "00:13:11.030",
+      "end": "00:13:11.040",
+      "text": "3x4"
+    },
+    {
+      "start": "00:13:11.040",
+      "end": "00:13:15.150",
+      "text": "3x4 pixels uh and we have a kernel of 2x2 in"
+    },
+    {
+      "start": "00:13:15.150",
+      "end": "00:13:15.160",
+      "text": "pixels uh and we have a kernel of 2x2 in"
+    },
+    {
+      "start": "00:13:15.160",
+      "end": "00:13:15.910",
+      "text": "pixels uh and we have a kernel of 2x2 in this"
+    },
+    {
+      "start": "00:13:15.910",
+      "end": "00:13:15.920",
+      "text": "this"
+    },
+    {
+      "start": "00:13:15.920",
+      "end": "00:13:19.269",
+      "text": "this case and the Kel is going to be"
+    },
+    {
+      "start": "00:13:19.269",
+      "end": "00:13:19.279",
+      "text": "case and the Kel is going to be"
+    },
+    {
+      "start": "00:13:19.279",
+      "end": "00:13:22.990",
+      "text": "case and the Kel is going to be positioned uh on all possible locations"
+    },
+    {
+      "start": "00:13:22.990",
+      "end": "00:13:23.000",
+      "text": "positioned uh on all possible locations"
+    },
+    {
+      "start": "00:13:23.000",
+      "end": "00:13:26.150",
+      "text": "positioned uh on all possible locations in this uh image in this input image so"
+    },
+    {
+      "start": "00:13:26.150",
+      "end": "00:13:26.160",
+      "text": "in this uh image in this input image so"
+    },
+    {
+      "start": "00:13:26.160",
+      "end": "00:13:28.030",
+      "text": "in this uh image in this input image so in this specific case it is position at"
+    },
+    {
+      "start": "00:13:28.030",
+      "end": "00:13:28.040",
+      "text": "in this specific case it is position at"
+    },
+    {
+      "start": "00:13:28.040",
+      "end": "00:13:30.550",
+      "text": "in this specific case it is position at this moment in time uh this location"
+    },
+    {
+      "start": "00:13:30.550",
+      "end": "00:13:30.560",
+      "text": "this moment in time uh this location"
+    },
+    {
+      "start": "00:13:30.560",
+      "end": "00:13:32.990",
+      "text": "this moment in time uh this location over here and we are going to be forming"
+    },
+    {
+      "start": "00:13:32.990",
+      "end": "00:13:33.000",
+      "text": "over here and we are going to be forming"
+    },
+    {
+      "start": "00:13:33.000",
+      "end": "00:13:35.710",
+      "text": "over here and we are going to be forming the dot product between the kernel and"
+    },
+    {
+      "start": "00:13:35.710",
+      "end": "00:13:35.720",
+      "text": "the dot product between the kernel and"
+    },
+    {
+      "start": "00:13:35.720",
+      "end": "00:13:38.790",
+      "text": "the dot product between the kernel and the input image and evidently the dot"
+    },
+    {
+      "start": "00:13:38.790",
+      "end": "00:13:38.800",
+      "text": "the input image and evidently the dot"
+    },
+    {
+      "start": "00:13:38.800",
+      "end": "00:13:46.269",
+      "text": "the input image and evidently the dot product is a * W + B * x + e * y + f * z"
+    },
+    {
+      "start": "00:13:46.269",
+      "end": "00:13:46.279",
+      "text": "product is a * W + B * x + e * y + f * z"
+    },
+    {
+      "start": "00:13:46.279",
+      "end": "00:13:48.590",
+      "text": "product is a * W + B * x + e * y + f * z uh and that will actually be a scalar"
+    },
+    {
+      "start": "00:13:48.590",
+      "end": "00:13:48.600",
+      "text": "uh and that will actually be a scalar"
+    },
+    {
+      "start": "00:13:48.600",
+      "end": "00:13:51.110",
+      "text": "uh and that will actually be a scalar that it will give us uh"
+    },
+    {
+      "start": "00:13:51.110",
+      "end": "00:13:51.120",
+      "text": "that it will give us uh"
+    },
+    {
+      "start": "00:13:51.120",
+      "end": "00:13:54.590",
+      "text": "that it will give us uh the feature value extracted feature"
+    },
+    {
+      "start": "00:13:54.590",
+      "end": "00:13:54.600",
+      "text": "the feature value extracted feature"
+    },
+    {
+      "start": "00:13:54.600",
+      "end": "00:13:57.990",
+      "text": "the feature value extracted feature value out of that uh operation and we"
+    },
+    {
+      "start": "00:13:57.990",
+      "end": "00:13:58.000",
+      "text": "value out of that uh operation and we"
+    },
+    {
+      "start": "00:13:58.000",
+      "end": "00:13:59.870",
+      "text": "value out of that uh operation and we will do exactly the same same thing over"
+    },
+    {
+      "start": "00:13:59.870",
+      "end": "00:13:59.880",
+      "text": "will do exactly the same same thing over"
+    },
+    {
+      "start": "00:13:59.880",
+      "end": "00:14:02.030",
+      "text": "will do exactly the same same thing over and over again uh we're going to slide"
+    },
+    {
+      "start": "00:14:02.030",
+      "end": "00:14:02.040",
+      "text": "and over again uh we're going to slide"
+    },
+    {
+      "start": "00:14:02.040",
+      "end": "00:14:05.550",
+      "text": "and over again uh we're going to slide the kernel into another location bcfg"
+    },
+    {
+      "start": "00:14:05.550",
+      "end": "00:14:05.560",
+      "text": "the kernel into another location bcfg"
+    },
+    {
+      "start": "00:14:05.560",
+      "end": "00:14:09.230",
+      "text": "the kernel into another location bcfg we'll do the dot product cdgh another"
+    },
+    {
+      "start": "00:14:09.230",
+      "end": "00:14:09.240",
+      "text": "we'll do the dot product cdgh another"
+    },
+    {
+      "start": "00:14:09.240",
+      "end": "00:14:12.670",
+      "text": "we'll do the dot product cdgh another dot product with it and uh to cut a long"
+    },
+    {
+      "start": "00:14:12.670",
+      "end": "00:14:12.680",
+      "text": "dot product with it and uh to cut a long"
+    },
+    {
+      "start": "00:14:12.680",
+      "end": "00:14:15.269",
+      "text": "dot product with it and uh to cut a long story short we are going to be getting a"
+    },
+    {
+      "start": "00:14:15.269",
+      "end": "00:14:15.279",
+      "text": "story short we are going to be getting a"
+    },
+    {
+      "start": "00:14:15.279",
+      "end": "00:14:18.870",
+      "text": "story short we are going to be getting a 2x3 output image and from now on we'll"
+    },
+    {
+      "start": "00:14:18.870",
+      "end": "00:14:18.880",
+      "text": "2x3 output image and from now on we'll"
+    },
+    {
+      "start": "00:14:18.880",
+      "end": "00:14:22.790",
+      "text": "2x3 output image and from now on we'll be calling this output images uh input"
+    },
+    {
+      "start": "00:14:22.790",
+      "end": "00:14:22.800",
+      "text": "be calling this output images uh input"
+    },
+    {
+      "start": "00:14:22.800",
+      "end": "00:14:25.629",
+      "text": "be calling this output images uh input and output images feature Maps because"
+    },
+    {
+      "start": "00:14:25.629",
+      "end": "00:14:25.639",
+      "text": "and output images feature Maps because"
+    },
+    {
+      "start": "00:14:25.639",
+      "end": "00:14:28.189",
+      "text": "and output images feature Maps because they are mapping the features that we"
+    },
+    {
+      "start": "00:14:28.189",
+      "end": "00:14:28.199",
+      "text": "they are mapping the features that we"
+    },
+    {
+      "start": "00:14:28.199",
+      "end": "00:14:30.430",
+      "text": "they are mapping the features that we have extracted with with the usage of"
+    },
+    {
+      "start": "00:14:30.430",
+      "end": "00:14:30.440",
+      "text": "have extracted with with the usage of"
+    },
+    {
+      "start": "00:14:30.440",
+      "end": "00:14:33.670",
+      "text": "have extracted with with the usage of kernels here we see just a single kernel"
+    },
+    {
+      "start": "00:14:33.670",
+      "end": "00:14:33.680",
+      "text": "kernels here we see just a single kernel"
+    },
+    {
+      "start": "00:14:33.680",
+      "end": "00:14:35.150",
+      "text": "kernels here we see just a single kernel but in general we're going to have"
+    },
+    {
+      "start": "00:14:35.150",
+      "end": "00:14:35.160",
+      "text": "but in general we're going to have"
+    },
+    {
+      "start": "00:14:35.160",
+      "end": "00:14:37.110",
+      "text": "but in general we're going to have multiple kernels be involved in the"
+    },
+    {
+      "start": "00:14:37.110",
+      "end": "00:14:37.120",
+      "text": "multiple kernels be involved in the"
+    },
+    {
+      "start": "00:14:37.120",
+      "end": "00:14:38.749",
+      "text": "multiple kernels be involved in the shape and form of"
+    },
+    {
+      "start": "00:14:38.749",
+      "end": "00:14:38.759",
+      "text": "shape and form of"
+    },
+    {
+      "start": "00:14:38.759",
+      "end": "00:14:41.990",
+      "text": "shape and form of filters uh in in these operations and so"
+    },
+    {
+      "start": "00:14:41.990",
+      "end": "00:14:42.000",
+      "text": "filters uh in in these operations and so"
+    },
+    {
+      "start": "00:14:42.000",
+      "end": "00:14:44.269",
+      "text": "filters uh in in these operations and so basically this is uh what we will be"
+    },
+    {
+      "start": "00:14:44.269",
+      "end": "00:14:44.279",
+      "text": "basically this is uh what we will be"
+    },
+    {
+      "start": "00:14:44.279",
+      "end": "00:14:47.590",
+      "text": "basically this is uh what we will be doing from now on and uh we will be uh"
+    },
+    {
+      "start": "00:14:47.590",
+      "end": "00:14:47.600",
+      "text": "doing from now on and uh we will be uh"
+    },
+    {
+      "start": "00:14:47.600",
+      "end": "00:14:51.150",
+      "text": "doing from now on and uh we will be uh sort of need to discuss next some uh"
+    },
+    {
+      "start": "00:14:51.150",
+      "end": "00:14:51.160",
+      "text": "sort of need to discuss next some uh"
+    },
+    {
+      "start": "00:14:51.160",
+      "end": "00:14:53.949",
+      "text": "sort of need to discuss next some uh architectural elements of uh you know"
+    },
+    {
+      "start": "00:14:53.949",
+      "end": "00:14:53.959",
+      "text": "architectural elements of uh you know"
+    },
+    {
+      "start": "00:14:53.959",
+      "end": "00:14:56.269",
+      "text": "architectural elements of uh you know this that that are sort of uh"
+    },
+    {
+      "start": "00:14:56.269",
+      "end": "00:14:56.279",
+      "text": "this that that are sort of uh"
+    },
+    {
+      "start": "00:14:56.279",
+      "end": "00:14:59.110",
+      "text": "this that that are sort of uh encompassing this uh operation over here"
+    },
+    {
+      "start": "00:14:59.110",
+      "end": "00:14:59.120",
+      "text": "encompassing this uh operation over here"
+    },
+    {
+      "start": "00:14:59.120",
+      "end": "00:15:03.710",
+      "text": "encompassing this uh operation over here but also enhance it with uh further um"
+    },
+    {
+      "start": "00:15:03.710",
+      "end": "00:15:03.720",
+      "text": "but also enhance it with uh further um"
+    },
+    {
+      "start": "00:15:03.720",
+      "end": "00:15:06.470",
+      "text": "but also enhance it with uh further um correlation type of structures inside"
+    },
+    {
+      "start": "00:15:06.470",
+      "end": "00:15:06.480",
+      "text": "correlation type of structures inside"
+    },
+    {
+      "start": "00:15:06.480",
+      "end": "00:15:10.399",
+      "text": "correlation type of structures inside convolution your Networks"
+    }
+  ]
+}
