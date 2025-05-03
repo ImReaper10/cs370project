@@ -8,7 +8,7 @@ input_file = "final_sentences.json"
 output_file = "sentences_with_topics.json"
 
 if not os.path.exists(input_file):
-    raise FileNotFoundError("⚠️ Run sentence_processing.py first to generate final_sentences.json")
+    raise FileNotFoundError("Run sentence_processing.py first to generate final_sentences.json")
 
 with open(input_file, "r", encoding="utf-8") as f:
     data = json.load(f)

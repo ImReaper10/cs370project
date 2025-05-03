@@ -27,7 +27,7 @@ def stream_answer(query):
     context_chunks = search_context(query)
 
     if not context_chunks:
-        yield "⚠️ No relevant context found in Qdrant."
+        yield "No relevant context found in Qdrant."
         return
 
     context = "\n".join(context_chunks)
@@ -76,12 +76,12 @@ Answer:"""
                         accumulated += content
                         yield accumulated
                 except Exception as e:
-                    print("⚠️ Error parsing chunk:", e)
+                    print(" Error parsing chunk:", e)
                     continue
 
     except Exception as e:
-        print("❌ Error contacting Ollama:", e)
-        yield f"❌ Ollama error: {e}"
+        print(" Error contacting Ollama:", e)
+        yield f" Ollama error: {e}"
 
 # === Step 5: Gradio UI ===
 with gr.Blocks() as demo:
